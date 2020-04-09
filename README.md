@@ -40,3 +40,9 @@ Link second create new team modal or integrate in first. FIND SOLUTION!
 Link all pages and make modals work on all pages with that functionality.
  
 ***
+## Changes 05.08.2020
+- On teams-average-charts & single-user pages small month text bellow bars changed in HTML to be capitalized instead of uppercase.
+- Added example function for create new team modals, changing content of first modal with second on confirm btn click, in html script tag.
+    * Second step modal for create team is stil in html commented.
+- All pages connected, company icon in sidebar added to all pages.
+- General modals added on all pages, for presentational purposes.
