@@ -3098,7 +3098,7 @@ i {
     width: 5rem;
     height: 5rem; }
   .sign-in-card {
-    min-width: 41rem;
+    min-width: 36rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3107,38 +3107,44 @@ i {
     left: 50%;
     transform: translate(-50%, -50%); }
     .sign-in-card h2 {
-      margin-bottom: .52rem;
+      margin-bottom: 1rem;
       font-size: 2.9rem;
       font-weight: 700;
       line-height: 1.03;
       letter-spacing: -0.1px;
       color: #000000; }
     .sign-in-card h3 {
-      margin-bottom: 3.2rem;
+      margin-bottom: 3rem;
       font-size: 1.9rem;
+      font-weight: 400;
       line-height: 1.53;
       color: #7f7f7f; }
+      .sign-in-card h3 a {
+        margin-left: .2rem;
+        font-weight: 500;
+        color: #159cff; }
+        .sign-in-card h3 a:hover, .sign-in-card h3 a:focus {
+          text-decoration: underline; }
     .sign-in-card input {
-      margin-bottom: .78rem;
+      padding: 1.15rem 1.45rem;
+      margin-bottom: 1.6rem;
       width: 100%;
-      padding: 1.5rem 2.3rem;
-      font-size: 1.8rem;
-      font-weight: 500;
-      line-height: 1.61;
-      border: 0;
-      outline: none;
-      border-radius: 1rem;
-      background-color: #f6f6f6; }
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.33;
+      color: #333;
+      box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
+      border: solid 1px #e8e8e8; }
       .sign-in-card input::placeholder {
-        color: #a1a1a1; }
+        color: #9b9b9b; }
     .sign-in-card .btn-custom-primary {
       margin-top: 1.2rem;
-      margin-bottom: 3.62rem;
-      padding: 1.35rem 0;
+      margin-bottom: 1.8rem;
+      padding: 1.1rem 0;
       display: flex;
       justify-content: center;
       width: 100%;
-      font-size: 2rem;
+      font-size: 1.65rem;
       font-weight: 500;
       line-height: 1.05;
       letter-spacing: -0.1px;
@@ -3146,16 +3152,19 @@ i {
       border: none;
       border-radius: 1rem;
       background-color: #159cff; }
-    .sign-in-card p {
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 1.63;
-      color: #2b2b2b; }
-      .sign-in-card p a {
-        margin-left: .5rem;
+    .sign-in-card .info {
+      margin-right: auto;
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.33;
+      color: #707070; }
+      .sign-in-card .info a {
+        margin-left: .2rem;
         color: #159cff; }
+        .sign-in-card .info a:hover, .sign-in-card .info a:focus {
+          text-decoration: underline; }
   .sign-in footer {
-    padding-top: .8rem;
+    padding-top: .85rem;
     padding-bottom: 4.5rem;
     align-self: center;
     display: flex;
@@ -3163,7 +3172,146 @@ i {
     justify-content: space-between;
     min-width: 90%;
     max-width: 120rem;
-    border-top: 1.5px solid #EAEAEA; }
+    border-top: 1.25px solid #EAEAEA; }
+    .sign-in footer p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.5;
+      color: #868686; }
+      @media (max-width: 575px) {
+        .sign-in footer p {
+          font-size: 1rem; } }
+
+.get-started {
+  position: relative;
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .get-started .logo {
+    width: 5rem;
+    height: 5rem; }
+  .get-started-card {
+    min-width: 36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .get-started-card h2 {
+      margin-bottom: 1rem;
+      font-size: 2.9rem;
+      font-weight: 700;
+      line-height: 1.03;
+      letter-spacing: -0.1px;
+      color: #000000; }
+    .get-started-card h3 {
+      margin-bottom: 3rem;
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 1.53;
+      color: #7f7f7f; }
+      .get-started-card h3 a {
+        margin-left: .2rem;
+        font-weight: 500;
+        color: #159cff; }
+        .get-started-card h3 a:hover, .get-started-card h3 a:focus {
+          text-decoration: underline; }
+    .get-started-card input {
+      padding: 1.15rem 1.45rem;
+      margin-bottom: 1.6rem;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.33;
+      color: #333;
+      box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
+      border: solid 1px #e8e8e8; }
+      .get-started-card input::placeholder {
+        color: #9b9b9b; }
+      .get-started-card input:last-of-type {
+        margin-bottom: 1rem; }
+    .get-started-card .input-container {
+      margin-bottom: 1.6rem;
+      display: flex; }
+      .get-started-card .input-container input {
+        margin-bottom: 0; }
+      .get-started-card .input-container input:not(:last-of-type) {
+        margin-right: 1rem; }
+    .get-started-card .characters {
+      margin-bottom: 2.4rem;
+      margin-right: auto;
+      font-size: 1.4rem;
+      line-height: 1.36;
+      color: #707070; }
+      .get-started-card .characters i {
+        margin-right: .5rem;
+        font-size: .7rem; }
+    .get-started-card .checkbox-container {
+      margin-bottom: 2.7rem;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .get-started-card .checkbox-container .pretty {
+        margin-right: 0;
+        font-size: 1.5rem; }
+      .get-started-card .checkbox-container .cb-label {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #707070; }
+        .get-started-card .checkbox-container .cb-label a {
+          font-weight: 500;
+          color: #159cff; }
+          .get-started-card .checkbox-container .cb-label a:hover, .get-started-card .checkbox-container .cb-label a:focus {
+            text-decoration: underline; }
+    .get-started-card .btn-custom-primary {
+      margin-bottom: 1.8rem;
+      padding: 1.1rem 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 1.65rem;
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.1px;
+      color: #ffffff;
+      border: none;
+      border-radius: 1rem;
+      background-color: #159cff; }
+    .get-started-card .info {
+      margin-right: auto;
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.33;
+      color: #707070; }
+      .get-started-card .info a {
+        margin-left: .2rem;
+        color: #159cff; }
+        .get-started-card .info a:hover, .get-started-card .info a:focus {
+          text-decoration: underline; }
+  .get-started footer {
+    padding-top: .85rem;
+    padding-bottom: 4.5rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 90%;
+    max-width: 120rem;
+    border-top: 1.25px solid #EAEAEA; }
+    .get-started footer p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.5;
+      color: #868686; }
+      @media (max-width: 575px) {
+        .get-started footer p {
+          font-size: 1rem; } }
 
 @media (max-width: 1024px) {
   body,

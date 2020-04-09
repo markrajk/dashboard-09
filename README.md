@@ -46,3 +46,5 @@ Link all pages and make modals work on all pages with that functionality.
     * Second step modal for create team is stil in html commented.
 - All pages connected, company icon in sidebar added to all pages.
 - General modals added on all pages, for presentational purposes.
+- Sign in page revorked.
+- Get started page added.
