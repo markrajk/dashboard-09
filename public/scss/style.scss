@@ -643,222 +643,27 @@ i {
   }
 }
 
-// Create new team modal
-// #createNewTeamModal {
-//   & .modal {
-    
-//     &-content {
-//       margin: auto;
-//       border-radius: .3rem;
-//     }
-  
-//     &-dialog {
-//       padding-left: 1rem;
-//       padding-right: 1rem;
-//       max-width: 99.7rem;
-//     }
-  
-//     &-header {
-//       padding: 2.2rem;
-//       display: flex;
-//       align-items: center;
-//       justify-content: flex-start;
-//       border: 0;
-
-//       & .bell {
-//         color: #647282;
-//         margin-right: 1.9rem;
-//         margin-left: auto;
-//         font-size: 2rem;
-//       }
-
-//       & .face {
-//         width: 2.9rem;
-//         height: 2.9rem;
-//       }
-
-//       & .close {
-//         font-size: 2rem;
-//       }
-  
-//       & h5 {
-//         font-size: 1.8rem;
-//         line-height: 1.33;
-//         color: #3d464d;
-  
-//         & .name {
-//           display: block;
-//           font-size: 2.6rem;
-//           font-weight: 700;
-//           line-height: 1.08;
-//           letter-spacing: 0.26px;
-//           color: #000000;
-//           text-transform: capitalize;
-//         }
-//       }
-  
-//       & .close {
-//         font-size: 2rem;
-//         align-self: flex-start;
-//       }
-//     }
-  
-//     &-body {
-//       padding: 3rem;
-//       background-color: #f6f9fc;
-  
-//       & .input-container {
-//         margin: 1.1rem 0;
-//         display: flex;
-//         align-items: center;
-//         width: 100%;
-
-//         @include respond(desktop-xsm) {
-//           display: block;
-//         }
-
-        
-  
-//         & label {
-//           margin-right: 2rem;
-//           min-width: 10rem;
-//           font-size: 1.3rem;
-//           line-height: 1.38;
-//           color: #3d464d;
-//           white-space: nowrap;
-
-//           @include respond(desktop-xsm) {
-//             margin-bottom: .5rem;
-//             display: block;
-//           }
-//         }
-  
-//         & input {
-//           padding: .9rem 1.2rem;
-//           width: 100%;
-//           font-size: 1.2rem;
-//           line-height: 1.33;
-//           border-radius: 3px;
-//           border: solid 1px #bdc4c9;
-//           background-color: #ffffff;
-//           outline: none;
-  
-//           &::placeholder {
-//             color: #a0a0a0;
-//           }
-//         }
-
-//         &.name {
-
-//           & input {
-//             max-width: 18.8rem;
-//           }
-//         }
-
-//         &.description {
-
-//           & input {
-//             max-width: 49.4rem;
-//           }
-//         }
-
-//         &.lead {
-//           display: inline-flex;
-//           align-items: center;
-//           justify-content: flex-end;
-
-//           @include respond(desktop-xsm) {
-           
-//             display: block;
-//           }
-
-//           & label {
-//             margin-right: 0;
-//             min-width: auto;
-//           }
-
-//           & span {
-//             margin: 0 1.8rem;
-//             font-size: 1.4rem;
-//             color: #b4bbc2;
-//           }
-
-//           & select {
-//             width: 100%;
-//             max-width: 17.3rem;
-//             padding: .85rem 1.2rem;
-//             font-size: 1.2rem;
-//             line-height: 1.33;
-//             border-radius: 3px;
-//             border: solid 1px #bdc4c9;
-//             color: #a0a0a0;
-
-//             & option {
-//               color: #333;
-//             }
-//           }
-//         }
-
-//       }
-
-//       & .double-input {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         @include respond(desktop-xsm) {
-//           display: block;
-//         }
-        
-//       }
-//     }
-  
-//     &-footer {
-//       padding: 2rem 2.2rem;
-//       border: 0;
-//       background-color: #f6f9fc;
-//       border-top: 1px solid #E6E8EB;
-  
-//       & .btn-custom-primary {
-//         padding: .7rem 1.4rem;
-//         border-radius: .4rem;
-//         font-size: 1.4rem;
-//         font-weight: 500;
-//         line-height: 1.36;
-//         color: #ffffff;
-
-//         border-radius: 4px;
-//         border-color: #1273dd;
-//         background-color: #1273dd;
-  
-//         &.outline {
-//           margin-left: 1.5rem;
-//           background-color: #FFF;
-//           font-weight: 500;
-//           color: #48525d;
-//           border-color: #bbbbbb;
-//         }
-//       }
-//     }
-//   }
-// }
-
 // Custom modal
 .modal-custom {
   &.modal {
 
-    & .modal-dialog {}
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
+    & .modal-dialog {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
+      max-width: 53.3rem;
+    }
+    
 
     & .modal-content {
       border-radius: 17px;
      
       border: solid 1.3px rgba(229, 229, 229, 0.55);
       & .modal-header {
-        padding: 1.5rem;
+        padding: 2rem;
+        padding-bottom: .5rem;
         border-bottom: none;
 
         & .close {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
       }
 
@@ -915,6 +720,7 @@ i {
   }
 
   &-input {
+    height: 4.8rem;
     margin-bottom: 1.1rem;
     width: 100%;
     max-width: 36rem;
@@ -968,6 +774,84 @@ i {
   }
 }
 
+#inviteNewMemberModal {
+  & .modal-dialog {
+    max-width: 53.3rem;
+  }
+
+  & .modal-custom-title {
+    margin-bottom: .5rem;
+  }
+
+  & .modal-custom-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  & .modal-custom-btn-round {
+    margin-top: 4rem;
+  }
+
+  & .modal-custom-cancel {
+    margin-bottom: 2rem;
+  }
+
+  // & input {
+  //   font-size: ;
+  // }
+}
+
+#createNewTeamModal01 {
+  & .modal-dialog {
+    max-width: 53.3rem;
+  }
+
+  & .replace {
+    width: 100%;
+  }
+
+  & .modal-custom-title {
+    margin-bottom: .5rem;
+  }
+
+  & .modal-custom-subtitle {
+    margin-bottom: 2.5rem;
+  }
+
+  & img {
+    margin-bottom: 1.8rem;
+  }
+
+  & .modal-custom-info {
+    font-weight: 400;
+  }
+
+  & .modal-custom-btn-round {
+    margin-top: 2rem;
+  }
+
+  & .modal-custom-cancel {
+    margin-bottom: 2rem;
+  }
+
+  // & input {
+  //   font-size: ;
+  // }
+}
+
+#createNewTeamModal01 {
+  & .modal-custom-subtitle {
+    margin-bottom: 6.5rem;
+  }
+
+  & .modal-custom-btn-round {
+    margin-top: 3.8rem;
+  }
+
+  & .modal-custom-cancel {
+    margin-bottom: 4rem;
+  }
+}
+
 #followNewTeamModal,
 #linkTeamModal {
 
@@ -975,12 +859,8 @@ i {
     max-width: 53.3rem;
   }
 
-  & .modal-body {
-
-  }
-
   & .input-container {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     width: 100%;
     max-width: 38.13rem;
     position: relative;
@@ -1004,6 +884,7 @@ i {
   }
 
   & .modal-custom-list {
+    margin-bottom: .5rem;
     width: 100%;
     max-width: 41.13rem;
     border-top: 1px solid #E0E0E0;
@@ -1062,6 +943,7 @@ i {
   }
 
   & .modal-custom-btn-round {
+    font-size: 1.5rem;
     width: auto;
     max-width: 100%;
     padding: .7rem 3rem;
@@ -1079,12 +961,30 @@ i {
   }
 }
 
+#followNewTeamModal {
+  & .modal-custom-btn-round {
+    margin-top: 4rem;
+  }
+
+  & .modal-custom-cancel {
+    margin-bottom: 2rem;
+  }
+}
+
 
 
 // NEW INVITATION MODAL
 #newInvitationModal {
 
   &.modal-custom {
+
+    & .modal-custom-subtitle {
+      margin-bottom: 5.4rem;
+    }
+
+    & img {
+      margin-bottom: 1.5rem;
+    }
 
     & .modal-custom-team-name {
       margin-bottom: .85rem;
@@ -1107,6 +1007,10 @@ i {
 
     & .modal-custom-btn-round {
       margin-top: 5.2rem;
+    }
+
+    & .modal-custom-cancel {
+      margin-bottom: 2.8rem;
     }
   }
 }
@@ -1143,12 +1047,14 @@ i {
   }
 
   & .input-container {
-    margin-bottom: 4.3rem;
+    height: 3.6rem;
+    margin-bottom: 3.5rem;
     width: 100%;
     max-width: 38.13rem;
     position: relative;
 
     & input {
+      height: 100%;
       min-width: 100%;
       margin-bottom: 0;
       padding: .6rem 1.5rem;
@@ -1172,7 +1078,18 @@ i {
     padding: .7rem 3rem;
   }
 
+  & h4 {
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-right: auto;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #484848;
+  }
+
   & .frequency {
+    margin-bottom: 3.6rem;
     width: 100%;
     max-width: 38.13rem;
     display: flex;
@@ -1210,6 +1127,22 @@ i {
     & a, & span {
       text-decoration: underline;
     }
+  }
+}
+
+#viewingRightsModal,
+#adminRightsModal {
+
+  & .modal-custom-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  & .modal-custom-btn-round {
+    margin-top: 2.6rem;
+  }
+
+  & .modal-custom-cancel {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1472,7 +1405,7 @@ i {
     width: 2.8rem;
     height: 2.8rem;
     position: absolute;
-    top: 2rem;
+    top: 1.9rem;
     right: 0;
     transform: translate(50%, 0);
     border: solid 1px #e1e1e1;
@@ -1532,7 +1465,7 @@ i {
         padding-right: 1.5rem;
         border: none;
         outline: none;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.33;
         color: #333;
@@ -1757,7 +1690,7 @@ i {
         justify-content: space-between;
         margin-bottom: 2.2rem;
         padding: 1rem 1.25rem;
-        padding-right: 2rem;
+        padding-right: 1.5rem;
         background-color: #f5f7f8;
         border-radius: .1rem;
 
@@ -1818,7 +1751,7 @@ i {
       & .section-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem 1.72rem;
+        grid-gap: 1rem 2.5rem;
 
         @include respond(desktop-md) {
           grid-template-columns: repeat(2, 1fr);
@@ -1829,7 +1762,7 @@ i {
         }
 
         & .progress-custom {
-          padding-right: 2.94rem;
+          padding-right: 2.2rem;
           padding-left: 1.25rem;
           padding-top: 2.8rem;
 
@@ -1924,7 +1857,7 @@ i {
       margin-bottom: 3rem;
 
       & .section-header {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.8rem;
 
         @include respond(desktop-xsm) {
           margin-bottom: 3rem;
@@ -1935,7 +1868,7 @@ i {
         padding: 0 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 3rem 1.72rem;
+        grid-gap: 3rem 2rem;
 
         @include respond(desktop-md) {
           grid-template-columns: repeat(2, 1fr);
@@ -1949,7 +1882,7 @@ i {
       }
       
       & .graph-card {
-        padding: .9rem 1.25rem;
+        padding: .9rem 1.35rem;
         padding-top: 1.1rem;
         height: 26rem;
 
@@ -4789,6 +4722,120 @@ i {
 }
 // ==================================
 // COMPANY ADMIN END
+// ==================================
+
+
+
+// ==================================
+// COMPANY SETTINGS START
+// ==================================
+.company-settings {
+  padding:2.5rem 0;
+  border-top: 1px solid #e1e1e1;
+  max-width: 72rem;
+  padding-top: 0;
+  //padding-right: calc(100% - 72rem);
+
+  &-header {
+    margin-top: 3.1rem;
+    margin-bottom: 3rem;
+
+    & .subheader-text {
+      margin-bottom: .6rem;
+      font-size: 1.7rem;
+      line-height: 1.35;
+      color: #1b2733;
+
+      &-small {
+        margin-bottom: 3.2rem;
+        font-size: 1.3rem;
+        line-height: 1.38;
+        color: #647282;
+      }
+    }
+  }
+
+  &-body {
+    max-height: calc(100vh - 30rem);
+
+    & .settings-table {
+
+      &-header {
+        height: 3.7rem;
+        padding: 1rem 1.2rem;
+        background-color: #f7f9fa;
+
+        & .column-01 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.33;
+          color: #647282;
+        }
+      }
+
+      &-row {
+        padding: 2.6rem 1.2rem;
+        padding-bottom: 2.6rem;
+        padding-right: 2rem;
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #1b2733;
+        line-height: 1.36;
+        align-items: center;
+        white-space: nowrap;
+        border-bottom: 1px solid #E6E8EB;
+
+        & .column-01 {
+          margin-right: auto;
+        }
+
+        & .column-02 {
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          margin-left: 1rem;
+          margin-right: 1.5rem;
+        }
+
+        & .column-03 {
+          color: #1267fb;
+        }
+
+
+        & img {
+          width: 5.59rem;
+          height: 5.59rem;
+          border-radius: 50%;
+        }
+
+        &:last-child {
+          padding-top: 1.6rem;
+          padding-bottom: 1.6rem;
+        }
+      }
+
+      & .delete {
+        display: inline-block;
+        margin-top: 2.14rem;
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.36;
+        color: #ff3636;
+      }
+
+      &:nth-of-type(2) {
+        & .settings-table-row {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          border-bottom: 1px solid #E6E8EB;
+        }
+      }
+    }
+  }
+}
+// ==================================
+// COMPANY SETTINGS END
 // ==================================
 
 

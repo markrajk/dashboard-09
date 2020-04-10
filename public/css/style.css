@@ -414,21 +414,23 @@ i {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   border: 1.25px solid #E5E5E5; }
 
-.modal-custom.modal {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09); }
-  .modal-custom.modal .modal-content {
-    border-radius: 17px;
-    border: solid 1.3px rgba(229, 229, 229, 0.55); }
-    .modal-custom.modal .modal-content .modal-header {
-      padding: 1.5rem;
-      border-bottom: none; }
-      .modal-custom.modal .modal-content .modal-header .close {
-        font-size: 1.2rem; }
-    .modal-custom.modal .modal-content .modal-body, .modal-custom.modal .modal-content .replace {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center; }
+.modal-custom.modal .modal-dialog {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
+  max-width: 53.3rem; }
+.modal-custom.modal .modal-content {
+  border-radius: 17px;
+  border: solid 1.3px rgba(229, 229, 229, 0.55); }
+  .modal-custom.modal .modal-content .modal-header {
+    padding: 2rem;
+    padding-bottom: .5rem;
+    border-bottom: none; }
+    .modal-custom.modal .modal-content .modal-header .close {
+      font-size: 1.3rem; }
+  .modal-custom.modal .modal-content .modal-body, .modal-custom.modal .modal-content .replace {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
 .modal-custom-title {
   margin-bottom: .7rem;
   font-family: Roboto;
@@ -459,6 +461,7 @@ i {
     .modal-custom-info a:hover, .modal-custom-info a:focus {
       text-decoration: underline; }
 .modal-custom-input {
+  height: 4.8rem;
   margin-bottom: 1.1rem;
   width: 100%;
   max-width: 36rem;
@@ -498,12 +501,47 @@ i {
     color: #7f7f7f;
     text-decoration: underline; }
 
+#inviteNewMemberModal .modal-dialog {
+  max-width: 53.3rem; }
+#inviteNewMemberModal .modal-custom-title {
+  margin-bottom: .5rem; }
+#inviteNewMemberModal .modal-custom-subtitle {
+  margin-bottom: 2rem; }
+#inviteNewMemberModal .modal-custom-btn-round {
+  margin-top: 4rem; }
+#inviteNewMemberModal .modal-custom-cancel {
+  margin-bottom: 2rem; }
+
+#createNewTeamModal01 .modal-dialog {
+  max-width: 53.3rem; }
+#createNewTeamModal01 .replace {
+  width: 100%; }
+#createNewTeamModal01 .modal-custom-title {
+  margin-bottom: .5rem; }
+#createNewTeamModal01 .modal-custom-subtitle {
+  margin-bottom: 2.5rem; }
+#createNewTeamModal01 img {
+  margin-bottom: 1.8rem; }
+#createNewTeamModal01 .modal-custom-info {
+  font-weight: 400; }
+#createNewTeamModal01 .modal-custom-btn-round {
+  margin-top: 2rem; }
+#createNewTeamModal01 .modal-custom-cancel {
+  margin-bottom: 2rem; }
+
+#createNewTeamModal01 .modal-custom-subtitle {
+  margin-bottom: 6.5rem; }
+#createNewTeamModal01 .modal-custom-btn-round {
+  margin-top: 3.8rem; }
+#createNewTeamModal01 .modal-custom-cancel {
+  margin-bottom: 4rem; }
+
 #followNewTeamModal .modal-dialog,
 #linkTeamModal .modal-dialog {
   max-width: 53.3rem; }
 #followNewTeamModal .input-container,
 #linkTeamModal .input-container {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   width: 100%;
   max-width: 38.13rem;
   position: relative; }
@@ -524,6 +562,7 @@ i {
     color: #848484; }
 #followNewTeamModal .modal-custom-list,
 #linkTeamModal .modal-custom-list {
+  margin-bottom: .5rem;
   width: 100%;
   max-width: 41.13rem;
   border-top: 1px solid #E0E0E0;
@@ -575,6 +614,7 @@ i {
       border-bottom: 1px solid #E0E0E0; }
 #followNewTeamModal .modal-custom-btn-round,
 #linkTeamModal .modal-custom-btn-round {
+  font-size: 1.5rem;
   width: auto;
   max-width: 100%;
   padding: .7rem 3rem; }
@@ -589,6 +629,15 @@ i {
   #linkTeamModal .modal-custom-info span {
     text-decoration: underline; }
 
+#followNewTeamModal .modal-custom-btn-round {
+  margin-top: 4rem; }
+#followNewTeamModal .modal-custom-cancel {
+  margin-bottom: 2rem; }
+
+#newInvitationModal.modal-custom .modal-custom-subtitle {
+  margin-bottom: 5.4rem; }
+#newInvitationModal.modal-custom img {
+  margin-bottom: 1.5rem; }
 #newInvitationModal.modal-custom .modal-custom-team-name {
   margin-bottom: .85rem;
   font-size: 1.7rem;
@@ -604,6 +653,8 @@ i {
     font-weight: 500; }
 #newInvitationModal.modal-custom .modal-custom-btn-round {
   margin-top: 5.2rem; }
+#newInvitationModal.modal-custom .modal-custom-cancel {
+  margin-bottom: 2.8rem; }
 
 #registerNewCompanyModal .modal-dialog {
   max-width: 53.3rem; }
@@ -623,11 +674,13 @@ i {
   color: #484848;
   text-align: left; }
 #feedbackRequestModal .input-container {
-  margin-bottom: 4.3rem;
+  height: 3.6rem;
+  margin-bottom: 3.5rem;
   width: 100%;
   max-width: 38.13rem;
   position: relative; }
   #feedbackRequestModal .input-container input {
+    height: 100%;
     min-width: 100%;
     margin-bottom: 0;
     padding: .6rem 1.5rem;
@@ -644,7 +697,16 @@ i {
   width: auto;
   max-width: 100%;
   padding: .7rem 3rem; }
+#feedbackRequestModal h4 {
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-right: auto;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #484848; }
 #feedbackRequestModal .frequency {
+  margin-bottom: 3.6rem;
   width: 100%;
   max-width: 38.13rem;
   display: flex;
@@ -674,6 +736,16 @@ i {
   color: #6a6a6a; }
   #feedbackRequestModal .modal-custom-info a, #feedbackRequestModal .modal-custom-info span {
     text-decoration: underline; }
+
+#viewingRightsModal .modal-custom-subtitle,
+#adminRightsModal .modal-custom-subtitle {
+  margin-bottom: 2rem; }
+#viewingRightsModal .modal-custom-btn-round,
+#adminRightsModal .modal-custom-btn-round {
+  margin-top: 2.6rem; }
+#viewingRightsModal .modal-custom-cancel,
+#adminRightsModal .modal-custom-cancel {
+  margin-bottom: 3rem; }
 
 .table-custom {
   width: 100% !important;
@@ -843,7 +915,7 @@ i {
     width: 2.8rem;
     height: 2.8rem;
     position: absolute;
-    top: 2rem;
+    top: 1.9rem;
     right: 0;
     transform: translate(50%, 0);
     border: solid 1px #e1e1e1;
@@ -879,7 +951,7 @@ i {
         padding-right: 1.5rem;
         border: none;
         outline: none;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.33;
         color: #333;
@@ -1026,7 +1098,7 @@ i {
         justify-content: space-between;
         margin-bottom: 2.2rem;
         padding: 1rem 1.25rem;
-        padding-right: 2rem;
+        padding-right: 1.5rem;
         background-color: #f5f7f8;
         border-radius: .1rem; }
         .teams-average-charts-body .section-header p {
@@ -1065,7 +1137,7 @@ i {
       .teams-average-charts-body .section-averages .section-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem 1.72rem; }
+        grid-gap: 1rem 2.5rem; }
         @media (max-width: 991px) {
           .teams-average-charts-body .section-averages .section-body {
             grid-template-columns: repeat(2, 1fr); } }
@@ -1073,7 +1145,7 @@ i {
           .teams-average-charts-body .section-averages .section-body {
             grid-template-columns: repeat(1, 100%); } }
         .teams-average-charts-body .section-averages .section-body .progress-custom {
-          padding-right: 2.94rem;
+          padding-right: 2.2rem;
           padding-left: 1.25rem;
           padding-top: 2.8rem; }
           .teams-average-charts-body .section-averages .section-body .progress-custom-sub {
@@ -1134,7 +1206,7 @@ i {
     .teams-average-charts-body .section-development {
       margin-bottom: 3rem; }
       .teams-average-charts-body .section-development .section-header {
-        margin-bottom: 1.5rem; }
+        margin-bottom: 1.8rem; }
         @media (max-width: 575px) {
           .teams-average-charts-body .section-development .section-header {
             margin-bottom: 3rem; } }
@@ -1142,7 +1214,7 @@ i {
         padding: 0 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 3rem 1.72rem; }
+        grid-gap: 3rem 2rem; }
         @media (max-width: 991px) {
           .teams-average-charts-body .section-development .section-body {
             grid-template-columns: repeat(2, 1fr); } }
@@ -1151,7 +1223,7 @@ i {
             grid-gap: 3rem 3rem;
             grid-template-columns: repeat(1, 100%); } }
       .teams-average-charts-body .section-development .graph-card {
-        padding: .9rem 1.25rem;
+        padding: .9rem 1.35rem;
         padding-top: 1.1rem;
         height: 26rem; }
         @media (max-width: 1199px) {
@@ -2922,6 +2994,76 @@ i {
     .company-admin .panel-body .table-header-fixed-col-4 {
       font-size: 1.3rem;
       color: #647282; }
+
+.company-settings {
+  padding: 2.5rem 0;
+  border-top: 1px solid #e1e1e1;
+  max-width: 72rem;
+  padding-top: 0; }
+  .company-settings-header {
+    margin-top: 3.1rem;
+    margin-bottom: 3rem; }
+    .company-settings-header .subheader-text {
+      margin-bottom: .6rem;
+      font-size: 1.7rem;
+      line-height: 1.35;
+      color: #1b2733; }
+      .company-settings-header .subheader-text-small {
+        margin-bottom: 3.2rem;
+        font-size: 1.3rem;
+        line-height: 1.38;
+        color: #647282; }
+  .company-settings-body {
+    max-height: calc(100vh - 30rem); }
+    .company-settings-body .settings-table-header {
+      height: 3.7rem;
+      padding: 1rem 1.2rem;
+      background-color: #f7f9fa; }
+      .company-settings-body .settings-table-header .column-01 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #647282; }
+    .company-settings-body .settings-table-row {
+      padding: 2.6rem 1.2rem;
+      padding-bottom: 2.6rem;
+      padding-right: 2rem;
+      display: flex;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #1b2733;
+      line-height: 1.36;
+      align-items: center;
+      white-space: nowrap;
+      border-bottom: 1px solid #E6E8EB; }
+      .company-settings-body .settings-table-row .column-01 {
+        margin-right: auto; }
+      .company-settings-body .settings-table-row .column-02 {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1.5rem; }
+      .company-settings-body .settings-table-row .column-03 {
+        color: #1267fb; }
+      .company-settings-body .settings-table-row img {
+        width: 5.59rem;
+        height: 5.59rem;
+        border-radius: 50%; }
+      .company-settings-body .settings-table-row:last-child {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem; }
+    .company-settings-body .settings-table .delete {
+      display: inline-block;
+      margin-top: 2.14rem;
+      margin-left: 1rem;
+      font-size: 1.4rem;
+      line-height: 1.36;
+      color: #ff3636; }
+    .company-settings-body .settings-table:nth-of-type(2) .settings-table-row {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #E6E8EB; }
 
 .user-settings-general {
   padding: 2.5rem 0;
