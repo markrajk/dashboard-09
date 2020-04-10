@@ -2050,11 +2050,11 @@ i {
     }
 
     &-body {
-      padding-top: 2.2rem;
+      padding-top: 2.5rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 2.6rem 2.6rem;
-      max-height: calc(100vh - 23.95rem - .9rem - 1px);
+      max-height: calc(100vh - 23.95rem - .5rem - 1px);
       padding-right: calc(100% - 103rem);
 
       overflow-y: auto;
@@ -2138,7 +2138,7 @@ i {
   
 
   &-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2.7rem;
 
     @include respond(desktop-xxsm) {
       margin-bottom: 2.5rem;
@@ -2146,7 +2146,7 @@ i {
 
     .btn-custom-primary {
       padding: .6rem 1.4rem;
-      margin-right: 1.1rem;
+      margin-right: 1.5rem;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.36;
@@ -2158,11 +2158,12 @@ i {
     }
 
     .input-container {
+      max-width: 19.1rem;
       position: relative;
       display: inline-block;
 
       & input {
-        max-width: 18.2rem;
+        width: 100%;
         padding: .65rem 2.8rem;
         padding-right: 1.5rem;
         font-size: 1.4rem;
@@ -2198,10 +2199,12 @@ i {
         & thead {
           height: 3.7rem;
           background-color: #f7f9fa;
+          margin-bottom: .5rem;
 
           & tr {
-            padding: .15rem 1.25rem;
-            padding-right: 1.5rem;
+            padding: .15rem 0;
+            // padding-right: 1.5rem;
+            
             & i {
               font-size: .8rem;
             }
@@ -2212,6 +2215,7 @@ i {
             font-weight: 500;
             line-height: 1.33;
             color: #647282;
+            margin-bottom: .45rem;
 
             & i {
               margin-left: 0.6rem;
@@ -2219,15 +2223,26 @@ i {
 
             & .dropdown-custom {
               &-trigger {
+                margin-right: 1.5rem;
                 display: inline-flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: .6rem;
                 & i:first-of-type {
                   margin-top: -.1rem;
-                  font-size: 1.3rem;
+                  font-size: 1rem;
                   margin-left: .8rem;
+
+                  & + i {
+                    font-size: .7rem;
+                  }
                 }
+              }
+            }
+
+            &:nth-of-type(1) {
+              & span {
+                margin-left: 1.25rem;
               }
             }
           }
@@ -2241,8 +2256,8 @@ i {
         & tbody {
           & tr {
             padding: .6rem 0;
-            padding-left: 1.25rem;
-            padding-right: 1.5rem;
+            
+            //padding-right: 1.5rem;
             border-bottom: 1px solid #ededf5;
 
             &:last-child {
@@ -2282,13 +2297,13 @@ i {
           }
         }
 
-        &-col-1 {
-          
+        &-col-1 {     
           & a {
             display: flex;
             align-items: center;
 
             & img {
+              margin-left: .8rem;
               margin-right: 1.5rem;
               width: 4.1rem;
               height: 4.1rem;
@@ -2530,17 +2545,26 @@ i {
           border-bottom: 1px solid #E6E8EB;
         }
 
+        &:nth-of-type(4) {
+          padding: 1.5rem 1.2rem;
+        }
+
         &:last-child {
-          padding-top: 1.74rem;
+          padding-top: 2.74rem;
         }
       }
 
       &:nth-of-type(2) {
-        & .settings-table-row {
-          padding-top: 3rem;
-          padding-bottom: 3rem;
-          border-bottom: 1px solid #E6E8EB;
-        }
+        // & .settings-table-row {
+        //   padding-top: 3rem;
+        //   padding-bottom: 3rem;
+        //   border-bottom: 1px solid #E6E8EB;
+        // }
+
+        // & .column-02 {
+        //   margin-left: -1rem;
+        //   //margin-right: 2rem;
+        // }
       }
     }
   }
@@ -2558,9 +2582,6 @@ i {
   padding:2.5rem 0;
   padding-bottom: 0;
   padding-top: 0;
-  //max-width: 80.5rem;
-  // max-height: calc(100vh - 9rem);
-  //border-top: 1px solid #e1e1e1;
   padding-right: calc(100% - 80.5rem);
 
   overflow-y: auto;
@@ -2606,7 +2627,7 @@ i {
     max-height: calc(100vh - 27.8rem - 1.5px);
 
     & .subheader-text {
-      margin-bottom: .5rem;
+      margin-bottom: .2rem;
       font-size: 1.6rem;
       line-height: 1.33;
       color: #1b2733;
@@ -2643,7 +2664,7 @@ i {
       }
 
       &-head {
-        height: 3.7rem;
+        height: 4.2rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #647282;
@@ -2811,7 +2832,7 @@ i {
   padding-top: 0;
   //max-width: 80.5rem;
   //border-top: 1px solid #e1e1e1;
-  padding-right: calc(100%  -  80.5rem);
+  padding-right: calc(100%  -  72rem);
 
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
@@ -2871,124 +2892,160 @@ i {
           color: #1b2733;
     
           &-small {
-            font-size: 1.3rem;
-            line-height: 1.75;
+            font-size: 1.2rem;
+            line-height: 1.67;
             color: #778391;
           }
         }
       }
 
       & a {
+        align-self: center;
         margin-right: 0;
         margin-left: .5rem;
-        align-self: flex-end;
       }
     }
 
-    & .table-custom {
-      margin-top: 2.1rem;
-
-      & th, & td {
-        display: flex;
-        align-items: center;
-      }
-
-      & td > * {
-        @include respond(desktop-xsm) {
-          font-size: 1.2rem;
-        }
-      }
-
-      &-head {
-        height: 3.7rem;
-        font-size: 1.2rem;
-        line-height: 1.33;
-        color: #647282;
-        background-color: #f7f9fa;
-        border: solid 1px #e6e8eb;
-        border-radius: 3px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-
-        & tr {
-          padding: 1.3rem 1.7rem;
-        }
-      }
+    & .panel {
+      margin-top: 2.2rem;
 
       &-body {
-        border: solid 1px #e6e8eb;
-        border-radius: 3px;
-        border-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        max-height: 26.4rem;
-        overflow-y: auto;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
-
-        &::-webkit-scrollbar {
-          /* WebKit */
-          width: 0;
-          height: 0;
-        }
-
-
-        & tr {
-          padding: 1.2rem 1.7rem;
-
-          &:not(:last-child) {
+        & .table-header-fixed {
+          max-width: 72rem;
+          border: solid 1px #e6e8eb;
+          border-radius: 3px;
+         
+          & thead {
+           
+            background-color: #f7f9fa;
             border-bottom: solid 1px #e6e8eb;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            
+  
+            & tr {
+              height: 3.7rem;
+              padding: .4rem 1.7rem;
+              padding-right: 3rem;
+              & i {
+                font-size: .8rem;
+              }
+            }
+            
+            & th {
+              font-size: 1.2rem;
+              font-weight: 500;
+              line-height: 1.33;
+              color: #647282;
+  
+              & i {
+                margin-left: 0.6rem;
+              }
+  
+              & .dropdown-custom {
+                &-trigger {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: .6rem;
+                  & i:first-of-type {
+                    margin-top: -.1rem;
+                    font-size: 1.3rem;
+                    margin-left: .8rem;
+                  }
+                }
+              }
+            }
           }
-
-          & td {
+  
+          & tbody {
+            max-height: calc(100vh - 40rem);
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+          }
+  
+          & tbody {
+            & tr {
+              padding: .5rem 1.7rem;
+              padding-right: 3rem;
+              border-bottom: solid 1px #e6e8eb;
+  
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+  
+          & td,
+          & th {
+  
+            &:nth-of-type(1) {
+              flex: 1!important;
+  
+              @include respond(desktop-xsm) {
+                flex: 1!important;
+              }
+            }
+  
+            &:nth-of-type(2) {
+              flex: 1.35!important;
+              @include respond(desktop-xxsm) {
+                display: none;
+              }
+            }
+  
+            &:nth-of-type(3) {
+              flex: 1!important;
+              @include respond(desktop-xsm) {
+                display: none;
+              }
+            }
+  
+            &:nth-of-type(4) {
+              flex: none!important;
+              width: 5.5rem!important;
+            }
+          }
+  
+          &-col-1 {
+            
+            & a {
+              font-size: 1.35rem;
+              line-height: 1.33;
+              color: #1165f4;
+            }
+          }
+  
+          &-col-2 {
             font-size: 1.4rem;
             line-height: 1.36;
             color: #1b2733;
-            &:not(:last-child) {
-              margin-right: .3rem;
-            }
           }
-        }
-      }
-
-      &-col-01 {
-        flex: 1;
-        font-weight: 500;
-
-        & a {
-          color: #1165f4;
-        }
-      }
-
-      &-col-02 {
-        flex: 1;
-
-        @include respond(desktop-xsm) {
-          display: none!important;
-        }
-      }
-
-      &-col-03 {
-        flex: 1;
-
-        & i {
-          margin-left: 1.2rem;
-          font-size: 1.5rem;
-          color: #76bb26;
-        }
-      }
-
-      &-col-04 {
-        flex: .4;
-        
-        & a {
-          color: #1b2733;
+  
+          &-col-3 {
+            font-size: 1.4rem;
+          }
+  
+          &-col-4 {
+            font-size: 1.3rem;
+            color: #647282;
+          }
         }
       }
     }
 
     & .table-01 {
       margin-bottom: 4.6rem;
+
+      & tbody {
+        max-height: 22.4rem!important;
+      }
+    }
+
+    & .table-02 {
+      & tbody {
+        max-height: 22.4rem!important;
+      }
     }
 
   }
@@ -3009,9 +3066,10 @@ i {
   
 
   &-people {
-    margin-top: 2.2rem;
+    margin-top: 2.4rem;
 
     &-header {
+      margin-bottom: .3rem;
       display: flex;
       align-items: center;
   
@@ -3023,6 +3081,7 @@ i {
       }
   
       & h2 {
+        margin-top: -.4rem;
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 1.33;
@@ -3030,7 +3089,7 @@ i {
         color: #333333;
   
         & span {
-          margin-bottom: 1.3rem;
+          margin-top: .5rem;
           display: block;
           font-size: 2.2rem;
           font-weight: 400;
@@ -3077,9 +3136,10 @@ i {
     }
 
     &-body {
+      padding-left: .7rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-      grid-gap: 2rem 3rem;
+      grid-gap: 2.8rem 3.2rem;
       max-height: calc(100vh - 35.8rem);
       padding-right: calc(100% - 79rem);
 
@@ -3293,7 +3353,7 @@ i {
 
   &-header {
     padding-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3309,6 +3369,7 @@ i {
       align-items: center;
 
       &-buttons {
+        align-self: flex-end;
         @include respond(desktop-sm) {
           margin-top: 1rem;
           margin-left: 1.25rem;
@@ -3349,8 +3410,13 @@ i {
     }
 
     & .btn-custom-primary {
-      padding: .4em 1.2em;
-      margin-right: 1.2rem;
+     
+      padding: .4em 1em;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.36;
+      letter-spacing: normal;
+      
 
       @include respond(desktop-xsm) {
         margin-right: .5rem;
@@ -3361,6 +3427,10 @@ i {
         &:focus {
           background-color: #f5f5f5;
         }
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 1.6rem;
       }
     }
   }
@@ -3453,7 +3523,7 @@ i {
     }
 
     & .section-averages {
-      margin-bottom: 4.2rem;
+      margin-bottom: 4.5rem;
 
       & .section-header {
         margin-bottom: 0;
@@ -3463,7 +3533,7 @@ i {
       & .section-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 1.72rem;
+        grid-gap: 0 2.5rem;
 
         @include respond(desktop-md) {
           grid-template-columns: repeat(2, 1fr);
@@ -3474,7 +3544,7 @@ i {
         }
 
         & .progress-custom {
-          padding-right: 2.94rem;
+          padding-right: 2.2rem;
           padding-left: 1.25rem;
           padding-top: 2.8rem;
 
@@ -3576,7 +3646,7 @@ i {
         padding: 0 0;
         display: grid;
         grid-template-columns: repeat(3, minmax(30rem, 1fr));
-        grid-gap: 0 1.72rem;
+        grid-gap: 0 2rem;
         margin-bottom: 2rem;
 
         @include respond(desktop-lg) {
@@ -3758,8 +3828,13 @@ i {
     }
 
     & .btn-custom-primary {
-      padding: .4em 1.2em;
-      margin-right: 1.2rem;
+     
+      padding: .4em 1em;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.36;
+      letter-spacing: normal;
+      
 
       @include respond(desktop-xsm) {
         margin-right: .5rem;
@@ -3771,6 +3846,10 @@ i {
           background-color: #f5f5f5;
         }
       }
+
+      &:not(:last-of-type) {
+        margin-right: 1.6rem;
+      }
     }
   }
 
@@ -3778,7 +3857,6 @@ i {
     & .section-comments {
 
       &-header {
-
         max-width: 103rem;
         display: flex;
         justify-content: space-between;
@@ -3815,10 +3893,10 @@ i {
       }
   
       &-body {
-        padding-top: 2.2rem;
+        padding-top: 1.6rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2.6rem 2.6rem;
+        grid-gap: 2.9rem 2.6rem;
         max-height: calc(100vh - 31rem - 1.5px);
         padding-right: calc(100% - 103rem);
 
@@ -4004,7 +4082,7 @@ i {
           
 
           & tr {
-            height: 3.7rem;
+            height: 4.3rem;
             padding: .4rem 1.7rem;
             padding-right: 3rem;
             & i {
@@ -4046,7 +4124,8 @@ i {
 
         & tbody {
           & tr {
-            padding: .5rem 1.7rem;
+            padding: .3rem 1.7rem;
+            padding-bottom: .7rem;
             padding-right: 3rem;
             border-bottom: solid 1px #e6e8eb;
 
@@ -4337,6 +4416,7 @@ i {
       }
 
       &-head {
+        height: 4.3rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #647282;
@@ -4347,12 +4427,13 @@ i {
         border-bottom-right-radius: 0;
 
         & tr {
-          height: 3.7rem;
+          
           padding: 1.3rem 1.7rem;
         }
       }
 
       &-body {
+        max-height: 22.4rem!important;
         border: solid 1px #e6e8eb;
         border-radius: 3px;
         border-top: 0;
@@ -4360,12 +4441,14 @@ i {
         border-top-right-radius: 0;
 
         & tr {
-          padding: 1.2rem 1.7rem;
+          height: 5.6rem;
+          padding: 1.7rem 1.7rem;
         }
       }
     }
 
     & .table-01 {
+      margin-bottom: 1.7rem;
       margin-top: 1.6rem;
 
       & .table-custom-body {
@@ -4466,7 +4549,7 @@ i {
       }
 
       & .table-custom-body tr {
-        height: 4.6rem;
+        //height: 4.6rem;
         font-size: 1.35rem;
         line-height: 1.56;
         letter-spacing: -0.22px;
@@ -4585,6 +4668,9 @@ i {
       }
 
       & .btn-custom-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         padding: .55rem 1.8rem;
         font-size: 1.4rem;
         font-weight: 400;
@@ -4610,13 +4696,14 @@ i {
         border-radius: 3px;
        
         & thead {
+          height: 4.3rem;
           background-color: #f7f9fa;
           border-bottom: solid 1px #e6e8eb;
           border-top-left-radius: 3px;
           border-top-right-radius: 3px;
 
           & tr {
-            height: 3.7rem;
+
             padding: .4rem 1.7rem;
             padding-right: 3rem;
             & i {
@@ -4658,6 +4745,7 @@ i {
 
         & tbody {
           & tr {
+            height: 5.45rem;
             padding: .5rem 1.7rem;
             padding-right: 3rem;
             border-bottom: solid 1px #e6e8eb;
@@ -4743,7 +4831,7 @@ i {
   //padding-right: calc(100% - 72rem);
 
   &-header {
-    margin-top: 3.1rem;
+    margin-top: 3.4rem;
     margin-bottom: 3rem;
 
     & .subheader-text {
@@ -4753,7 +4841,7 @@ i {
       color: #1b2733;
 
       &-small {
-        margin-bottom: 3.2rem;
+        margin-bottom: 3.5rem;
         font-size: 1.3rem;
         line-height: 1.38;
         color: #647282;
@@ -4819,6 +4907,17 @@ i {
           padding-top: 1.6rem;
           padding-bottom: 1.6rem;
         }
+
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+          padding: 1.5rem 1.2rem;
+          padding-right: 2rem;
+        }
+
+        &:nth-of-type(5) {
+          padding-top: 1.65rem;
+          padding-bottom: 1.65rem;
+        }
       }
 
       & .delete {
@@ -4858,8 +4957,8 @@ i {
   //padding-right: calc(100% - 72rem);
 
   &-header {
-    margin-top: 3.1rem;
-    margin-bottom: 3rem;
+    margin-top: 3.3rem;
+    margin-bottom: 3.4rem;
 
     & .subheader-text {
       margin-bottom: .6rem;
@@ -4928,8 +5027,8 @@ i {
         }
 
         &:last-child {
-          padding-top: 1.6rem;
-          padding-bottom: 1.6rem;
+          padding-top: 1.7rem;
+          padding-bottom: 1.7rem;
         }
       }
 
@@ -4961,8 +5060,8 @@ i {
   //padding-right: calc(100% - 72rem);
 
   &-header {
-    margin-top: 3.1rem;
-    margin-bottom: 3rem;
+    margin-top: 3.3rem;
+    margin-bottom: 3.5rem;
 
     & .subheader-text {
       margin-bottom: .6rem;
@@ -4989,6 +5088,7 @@ i {
           border: solid 1px #e6e8eb;
          
           & thead {
+            height: 4.3rem;
             background-color: #f7f9fa;
             border-bottom: solid 1px #e6e8eb;
     
@@ -5035,7 +5135,7 @@ i {
     
           & tbody {
             & tr {
-              padding: .5rem 1.7rem;
+              padding: .4rem 1.7rem;
               padding-right: 3rem;
               border-bottom: solid 1px #e6e8eb;
     
@@ -5121,12 +5221,12 @@ i {
   padding-top: 0;
   //padding-right: calc(100% - 72rem);
 
-  &-header {
-    margin-top: 3.1rem;
-    margin-bottom: 3rem;
+  // &-header {
+  //   margin-top: 10rem;
+  //   margin-bottom: 3rem;
 
     
-  }
+  // }
 
   &-body {
     max-height: calc(100vh - 30rem);
@@ -5158,7 +5258,7 @@ i {
       }
 
       & .pretty {
-        font-size: 3rem;
+        font-size: 2.8rem;
 
         & .state::before {
           top: calc((0% - (100% - 1em)) - 9%);
@@ -5166,10 +5266,10 @@ i {
       }
 
       &:first-of-type {
-        margin-top: 3.1rem;
+        margin-top: 3.4rem;
 
         & + .tool-option {
-          margin-top: 4.9rem;
+          margin-top: 5.4rem;
         }
       }
     }

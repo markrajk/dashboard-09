@@ -53,9 +53,12 @@ Link all pages and make modals work on all pages with that functionality.
 - company-settings page added.
 - single-user-feedback-given page added.
 - user-settings pages now with proper header, html changed.
+- user-settings-teams .subheader-text & .subheader-text-small changed in html.
 - top right header dropdown link text changed on all pages.
 - company-admin subheader content changed in html.
 - general modals now working on give-feedback page (presentational purposes).
+- team-settings-rights tables changed in html.
+
 - content of dropdowns changed on all pages.
     * average-charts months ▼
     * teams-comments latest ▼
