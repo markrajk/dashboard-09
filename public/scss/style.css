@@ -61,9 +61,7 @@ a:focus {
 
 .btn-custom-primary {
   padding: .5em 1.1em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   color: #fff;
   font-size: 1.4rem;
   font-weight: 500;
@@ -236,13 +234,9 @@ i {
   height: 100%; }
 
 .page-content {
-  padding: 3.4rem 3.2rem 0 4.1rem;
+  padding: 3.4rem 0 0 4.1rem;
   width: calc(100% - 8.8rem);
   height: 100%; }
-  @media (max-width: 575px) {
-    .page-content {
-      padding: 2rem;
-      padding-top: 3.4rem; } }
   @media (max-width: 379px) {
     .page-content {
       padding: 1rem;
@@ -393,7 +387,6 @@ i {
     .dropdown-custom-list:focus, .dropdown-custom-list:active {
       display: block; }
     .dropdown-custom-list-item {
-      font-weight: 400;
       font-size: 1.5rem;
       line-height: 1.33;
       color: #3d464d; }
@@ -1135,9 +1128,6 @@ i {
       margin-bottom: 3rem; }
       .teams-average-charts-body .section-development .section-header {
         margin-bottom: 1.5rem; }
-        @media (max-width: 575px) {
-          .teams-average-charts-body .section-development .section-header {
-            margin-bottom: 3rem; } }
       .teams-average-charts-body .section-development .section-body {
         padding: 0 0;
         display: grid;
@@ -1148,7 +1138,6 @@ i {
             grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 575px) {
           .teams-average-charts-body .section-development .section-body {
-            grid-gap: 3rem 3rem;
             grid-template-columns: repeat(1, 100%); } }
       .teams-average-charts-body .section-development .graph-card {
         padding: .9rem 1.25rem;
@@ -1224,7 +1213,6 @@ i {
   .teams-comments .section-comments {
     padding-top: 3.45rem; }
     .teams-comments .section-comments-header {
-      height: 3.7rem;
       max-width: 103rem;
       display: flex;
       justify-content: space-between;
@@ -1328,12 +1316,15 @@ i {
       display: inline-block; }
       .teams-people-view-header .input-container input {
         max-width: 18.2rem;
-        padding: .65rem 2.8rem;
+        padding: .5em 2.8rem;
         padding-right: 1.5rem;
         font-size: 1.4rem;
         line-height: 1.36;
         border-radius: 3px;
         border: solid 1px #c1c7cd; }
+        @media (max-width: 575px) {
+          .teams-people-view-header .input-container input {
+            font-size: 1rem; } }
         @media (max-width: 379px) {
           .teams-people-view-header .input-container input {
             font-size: .95rem; } }
@@ -1346,7 +1337,6 @@ i {
   .teams-people-view-body {
     max-height: calc(100vh - 30rem); }
   .teams-people-view .panel-body .table-header-fixed thead {
-    height: 3.7rem;
     background-color: #f7f9fa; }
     .teams-people-view .panel-body .table-header-fixed thead tr {
       padding: .15rem 1.25rem;
@@ -1354,7 +1344,7 @@ i {
       .teams-people-view .panel-body .table-header-fixed thead tr i {
         font-size: .8rem; }
     .teams-people-view .panel-body .table-header-fixed thead th {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 500;
       line-height: 1.33;
       color: #647282; }
@@ -1519,7 +1509,6 @@ i {
   .teams-settings-general-body {
     max-height: calc(100vh - 30rem); }
     .teams-settings-general-body .settings-table-header {
-      height: 3.7rem;
       padding: 1rem 1.2rem;
       background-color: #f7f9fa; }
       .teams-settings-general-body .settings-table-header .column-01 {
@@ -1615,7 +1604,6 @@ i {
       .teams-settings-feedback-body .table-custom td > * {
         font-size: 1.2rem; } }
     .teams-settings-feedback-body .table-custom-head {
-      height: 3.7rem;
       font-size: 1.2rem;
       line-height: 1.33;
       color: #647282;
@@ -1755,7 +1743,6 @@ i {
             line-height: 1.75;
             color: #778391; }
       .teams-settings-rights-body .section-caption a {
-        margin-right: 0;
         margin-left: .5rem;
         align-self: flex-end; }
     .teams-settings-rights-body .table-custom {
@@ -1767,7 +1754,6 @@ i {
         .teams-settings-rights-body .table-custom td > * {
           font-size: 1.2rem; } }
       .teams-settings-rights-body .table-custom-head {
-        height: 3.7rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #647282;
@@ -2082,7 +2068,6 @@ i {
   .single-user-body .section {
     position: relative; }
     .single-user-body .section-header {
-      height: 3.7rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -2488,7 +2473,6 @@ i {
       background-color: #f7f9fa;
       border-bottom: solid 1px #e6e8eb; }
       .company-members .panel-body .table-header-fixed thead tr {
-        height: 3.7rem;
         padding: .4rem 1.7rem;
         padding-right: 3rem; }
         .company-members .panel-body .table-header-fixed thead tr i {
@@ -2709,7 +2693,6 @@ i {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0; }
       .company-teams-body .table-custom-head tr {
-        height: 3.7rem;
         padding: 1.3rem 1.7rem; }
     .company-teams-body .table-custom-body {
       border: solid 1px #e6e8eb;
@@ -2762,6 +2745,8 @@ i {
         .company-teams-body .table-02 thead td .dropdown-custom-trigger i + i {
           margin-left: .4rem;
           font-size: .8rem; }
+      .company-teams-body .table-02 .table-custom-head tr {
+        height: 4.1rem; }
       .company-teams-body .table-02 .table-custom-body {
         max-height: 18.4rem; }
         .company-teams-body .table-02 .table-custom-body .dropdown-custom-trigger {
@@ -2816,12 +2801,11 @@ i {
     align-items: flex-start; }
     .company-admin-header .input-group-custom .input-container {
       margin-bottom: 1.8rem;
-      width: 100%;
       max-width: 25.6rem;
       position: relative; }
       .company-admin-header .input-group-custom .input-container input {
         width: 100%;
-        padding: .55rem 3.5rem;
+        padding: .5rem 3.5rem;
         padding-right: 1.5rem;
         border: none;
         outline: none;
@@ -2829,45 +2813,40 @@ i {
         font-weight: 400;
         line-height: 1.33;
         color: #333;
-        border: solid 1px #dedede;
+        border: 1px solid #DEDEDE;
         border-radius: 1.6rem; }
         .company-admin-header .input-group-custom .input-container input::placeholder {
-          color: #647282; }
+          color: #9699a6; }
       .company-admin-header .input-group-custom .input-container i {
         position: absolute;
         top: 50%;
         left: 0;
         transform: translate(90%, -50%);
         font-size: 1.5rem;
-        color: #647282; }
+        color: #9699a6; }
     .company-admin-header .input-group-custom .btn-custom-primary {
-      padding: .55rem 1.8rem;
+      padding: .6rem 1.8rem;
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 1.36;
       letter-spacing: normal;
-      color: #1b2733;
-      border: solid 1px #dedede; }
+      color: #1b2733; }
       .company-admin-header .input-group-custom .btn-custom-primary:hover, .company-admin-header .input-group-custom .btn-custom-primary:focus {
         background-color: #f5f5f5; }
   .company-admin .panel-body .table-header-fixed {
     max-width: 72rem;
-    border: solid 1px #e6e8eb;
-    border-radius: 3px; }
+    border: solid 1px #e6e8eb; }
     .company-admin .panel-body .table-header-fixed thead {
       background-color: #f7f9fa;
-      border-bottom: solid 1px #e6e8eb;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px; }
+      border-bottom: solid 1px #e6e8eb; }
       .company-admin .panel-body .table-header-fixed thead tr {
-        height: 3.7rem;
         padding: .4rem 1.7rem;
         padding-right: 3rem; }
         .company-admin .panel-body .table-header-fixed thead tr i {
           font-size: .8rem; }
       .company-admin .panel-body .table-header-fixed thead th {
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.33;
         color: #647282; }
         .company-admin .panel-body .table-header-fixed thead th i {
@@ -2882,9 +2861,7 @@ i {
             font-size: 1.3rem;
             margin-left: .8rem; }
     .company-admin .panel-body .table-header-fixed tbody {
-      max-height: calc(100vh - 40rem);
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px; }
+      max-height: calc(100vh - 40rem); }
     .company-admin .panel-body .table-header-fixed tbody tr {
       padding: .5rem 1.7rem;
       padding-right: 3rem;
@@ -2944,7 +2921,6 @@ i {
   .user-settings-general-body {
     max-height: calc(100vh - 30rem); }
     .user-settings-general-body .settings-table-header {
-      height: 3.7rem;
       padding: 1rem 1.2rem;
       background-color: #f7f9fa; }
       .user-settings-general-body .settings-table-header .column-01 {
@@ -3112,32 +3088,32 @@ i {
 .sign-in {
   position: relative;
   width: 100%;
-  padding: 1.5rem 1.7rem;
+  padding: 1.2rem 1.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .sign-in .logo {
-    width: 4.4rem;
-    height: 4.4rem; }
+    width: 5rem;
+    height: 5rem; }
   .sign-in-card {
     min-width: 36rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 44.3%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .sign-in-card h2 {
-      margin-bottom: 1.3rem;
+      margin-bottom: 1rem;
       font-size: 2.9rem;
       font-weight: 700;
       line-height: 1.03;
       letter-spacing: -0.1px;
       color: #000000; }
     .sign-in-card h3 {
-      margin-bottom: 2.9rem;
+      margin-bottom: 3rem;
       font-size: 1.9rem;
       font-weight: 400;
       line-height: 1.53;
@@ -3149,7 +3125,7 @@ i {
         .sign-in-card h3 a:hover, .sign-in-card h3 a:focus {
           text-decoration: underline; }
     .sign-in-card input {
-      padding: 1.1rem 1.45rem;
+      padding: 1.15rem 1.45rem;
       margin-bottom: 1.6rem;
       width: 100%;
       font-size: 1.5rem;
@@ -3161,7 +3137,7 @@ i {
       .sign-in-card input::placeholder {
         color: #9b9b9b; }
     .sign-in-card .btn-custom-primary {
-      margin-top: .8rem;
+      margin-top: 1.2rem;
       margin-bottom: 1.8rem;
       padding: 1.1rem 0;
       display: flex;
@@ -3169,10 +3145,11 @@ i {
       width: 100%;
       font-size: 1.65rem;
       font-weight: 500;
-      line-height: 1.27;
+      line-height: 1.05;
+      letter-spacing: -0.1px;
       color: #ffffff;
       border: none;
-      border-radius: .5rem;
+      border-radius: 1rem;
       background-color: #159cff; }
     .sign-in-card .info {
       margin-right: auto;
@@ -3181,17 +3158,18 @@ i {
       line-height: 1.33;
       color: #707070; }
       .sign-in-card .info a {
+        margin-left: .2rem;
         color: #159cff; }
         .sign-in-card .info a:hover, .sign-in-card .info a:focus {
           text-decoration: underline; }
   .sign-in footer {
     padding-top: .85rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4.5rem;
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    min-width: 90%;
     max-width: 120rem;
     border-top: 1.25px solid #EAEAEA; }
     .sign-in footer p {
@@ -3206,25 +3184,25 @@ i {
 .get-started {
   position: relative;
   width: 100%;
-  padding: 1.5rem 1.7rem;
+  padding: 1.2rem 1.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .get-started .logo {
-    width: 4.4rem;
-    height: 4.4rem; }
+    width: 5rem;
+    height: 5rem; }
   .get-started-card {
-    max-width: 36rem;
+    min-width: 36rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 48.4%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .get-started-card h2 {
-      margin-bottom: 1.3rem;
+      margin-bottom: 1rem;
       font-size: 2.9rem;
       font-weight: 700;
       line-height: 1.03;
@@ -3243,8 +3221,8 @@ i {
         .get-started-card h3 a:hover, .get-started-card h3 a:focus {
           text-decoration: underline; }
     .get-started-card input {
-      padding: 1.1rem 1.45rem;
-      margin-bottom: 2.4rem;
+      padding: 1.15rem 1.45rem;
+      margin-bottom: 1.6rem;
       width: 100%;
       font-size: 1.5rem;
       font-weight: 400;
@@ -3257,14 +3235,13 @@ i {
       .get-started-card input:last-of-type {
         margin-bottom: 1rem; }
     .get-started-card .input-container {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.6rem;
       display: flex; }
       .get-started-card .input-container input {
         margin-bottom: 0; }
       .get-started-card .input-container input:not(:last-of-type) {
-        margin-right: .9rem; }
+        margin-right: 1rem; }
     .get-started-card .characters {
-      margin-left: .3rem;
       margin-bottom: 2.4rem;
       margin-right: auto;
       font-size: 1.4rem;
@@ -3274,7 +3251,6 @@ i {
         margin-right: .5rem;
         font-size: .7rem; }
     .get-started-card .checkbox-container {
-      margin-left: .5rem;
       margin-bottom: 2.7rem;
       width: 100%;
       display: flex;
@@ -3282,9 +3258,8 @@ i {
       align-items: center; }
       .get-started-card .checkbox-container .pretty {
         margin-right: 0;
-        font-size: 1.3rem; }
+        font-size: 1.5rem; }
       .get-started-card .checkbox-container .cb-label {
-        margin-left: .3rem;
         font-size: 1.3rem;
         font-weight: 400;
         color: #707070; }
@@ -3301,10 +3276,11 @@ i {
       width: 100%;
       font-size: 1.65rem;
       font-weight: 500;
-      line-height: 1.27;
+      line-height: 1.05;
+      letter-spacing: -0.1px;
       color: #ffffff;
       border: none;
-      border-radius: .5rem;
+      border-radius: 1rem;
       background-color: #159cff; }
     .get-started-card .info {
       margin-right: auto;
@@ -3313,17 +3289,18 @@ i {
       line-height: 1.33;
       color: #707070; }
       .get-started-card .info a {
+        margin-left: .2rem;
         color: #159cff; }
         .get-started-card .info a:hover, .get-started-card .info a:focus {
           text-decoration: underline; }
   .get-started footer {
     padding-top: .85rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4.5rem;
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    min-width: 90%;
     max-width: 120rem;
     border-top: 1.25px solid #EAEAEA; }
     .get-started footer p {
@@ -3341,3 +3318,5 @@ i {
     /* height: 100%!important; */
     overflow: auto !important;
     max-height: 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */

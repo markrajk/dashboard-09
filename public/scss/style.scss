@@ -150,7 +150,9 @@ a:focus {
 // buttons
 .btn-custom-primary {
   padding: .5em 1.1em;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   font-size: 1.4rem;
   font-weight: 500;
@@ -386,9 +388,14 @@ i {
 }
 
 .page-content {
-  padding: 3.4rem 0 0 4.1rem;
+  padding: 3.4rem 3.2rem 0 4.1rem;
   width: calc(100% - 8.8rem);
   height: 100%;
+
+  @include respond(desktop-xsm) {
+    padding: 2rem;
+    padding-top: 3.4rem;
+  }
 
   @include respond(desktop-xxsm) {
     padding: 1rem;
@@ -601,6 +608,7 @@ i {
     }
 
     &-item {
+      font-weight: 400;
       font-size: 1.5rem;
       line-height: 1.33;
       color: #3d464d;
@@ -1725,10 +1733,6 @@ i {
     border-top: 1px solid #e1e1e1;
   }
 
-  &~header {
-    background-color: red!important;
-  }
-
 
     overflow-y: auto;
     scrollbar-width: none; /* Firefox */
@@ -1747,6 +1751,7 @@ i {
       position: relative;
 
       &-header {
+        height: 3.7rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1920,6 +1925,10 @@ i {
 
       & .section-header {
         margin-bottom: 1.5rem;
+
+        @include respond(desktop-xsm) {
+          margin-bottom: 3rem;
+        }
       }
 
       & .section-body {
@@ -1933,6 +1942,7 @@ i {
         }
 
         @include respond(desktop-xsm) {
+          grid-gap: 3rem 3rem;
           grid-template-columns: repeat(1, 100%);
         }
        
@@ -2071,6 +2081,7 @@ i {
     padding-top: 3.45rem;
 
     &-header {
+      height: 3.7rem;
       max-width: 103rem;
       display: flex;
       justify-content: space-between;
@@ -2219,16 +2230,12 @@ i {
 
       & input {
         max-width: 18.2rem;
-        padding: .5em 2.8rem;
+        padding: .65rem 2.8rem;
         padding-right: 1.5rem;
         font-size: 1.4rem;
         line-height: 1.36;
         border-radius: 3px;
         border: solid 1px #c1c7cd;
-
-        @include respond(desktop-xsm) {
-          font-size: 1rem;
-        }
 
         @include respond(desktop-xxsm) {
           font-size: .95rem;
@@ -2256,6 +2263,7 @@ i {
       & .table-header-fixed {
        
         & thead {
+          height: 3.7rem;
           background-color: #f7f9fa;
 
           & tr {
@@ -2267,7 +2275,7 @@ i {
           }
           
           & th {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             font-weight: 500;
             line-height: 1.33;
             color: #647282;
@@ -2540,6 +2548,7 @@ i {
     & .settings-table {
 
       &-header {
+        height: 3.7rem;
         padding: 1rem 1.2rem;
         background-color: #f7f9fa;
 
@@ -2701,6 +2710,7 @@ i {
       }
 
       &-head {
+        height: 3.7rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #647282;
@@ -2936,6 +2946,7 @@ i {
       }
 
       & a {
+        margin-right: 0;
         margin-left: .5rem;
         align-self: flex-end;
       }
@@ -2956,6 +2967,7 @@ i {
       }
 
       &-head {
+        height: 3.7rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #647282;
@@ -3426,6 +3438,7 @@ i {
       position: relative;
 
       &-header {
+        height: 3.7rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -3832,6 +3845,7 @@ i {
     & .section-comments {
 
       &-header {
+
         max-width: 103rem;
         display: flex;
         justify-content: space-between;
@@ -4048,10 +4062,12 @@ i {
         border: solid 1px #e6e8eb;
        
         & thead {
+         
           background-color: #f7f9fa;
           border-bottom: solid 1px #e6e8eb;
 
           & tr {
+            height: 3.7rem;
             padding: .4rem 1.7rem;
             padding-right: 3rem;
             & i {
@@ -4278,9 +4294,6 @@ i {
   padding:2.5rem 0;
   padding-bottom: 0;
   padding-top: 0;
-  //max-width: 80.5rem;
-  // max-height: calc(100vh - 9rem);
-  //border-top: 1px solid #e1e1e1;
   padding-right: calc(100% - 80.5rem);
 
   overflow-y: auto;
@@ -4395,6 +4408,7 @@ i {
         border-bottom-right-radius: 0;
 
         & tr {
+          height: 3.7rem;
           padding: 1.3rem 1.7rem;
         }
       }
@@ -4498,7 +4512,7 @@ i {
       }
 
       & .table-custom-head tr {
-        height: 4.1rem;
+        //height: 3rem;
       }
 
       & .table-custom-body {
@@ -4599,12 +4613,13 @@ i {
 
       & .input-container {
         margin-bottom: 1.8rem;
+        width: 100%;
         max-width: 25.6rem;
         position: relative;
   
         & input {
           width: 100%;
-          padding: .5rem 3.5rem;
+          padding: .55rem 3.5rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
@@ -4612,11 +4627,11 @@ i {
           font-weight: 400;
           line-height: 1.33;
           color: #333;
-          border: 1px solid #DEDEDE;
+          border: solid 1px #dedede;
           border-radius: 1.6rem;
   
           &::placeholder {
-            color: #9699a6;
+            color: #647282;
           }
         }
   
@@ -4626,17 +4641,18 @@ i {
           left: 0;
           transform: translate(90%, -50%);
           font-size: 1.5rem;
-          color: #9699a6;
+          color: #647282;
         }
       }
 
       & .btn-custom-primary {
-        padding: .6rem 1.8rem;
+        padding: .55rem 1.8rem;
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.36;
         letter-spacing: normal;
         color: #1b2733;
+        border: solid 1px #dedede;
 
         &:hover,
         &:focus {
@@ -4652,12 +4668,16 @@ i {
       & .table-header-fixed {
         max-width: 72rem;
         border: solid 1px #e6e8eb;
+        border-radius: 3px;
        
         & thead {
           background-color: #f7f9fa;
           border-bottom: solid 1px #e6e8eb;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
 
           & tr {
+            height: 3.7rem;
             padding: .4rem 1.7rem;
             padding-right: 3rem;
             & i {
@@ -4667,7 +4687,7 @@ i {
           
           & th {
             font-size: 1.2rem;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1.33;
             color: #647282;
 
@@ -4693,6 +4713,8 @@ i {
 
         & tbody {
           max-height: calc(100vh - 40rem);
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
         }
 
         & tbody {
@@ -4807,6 +4829,7 @@ i {
     & .settings-table {
 
       &-header {
+        height: 3.7rem;
         padding: 1rem 1.2rem;
         background-color: #f7f9fa;
 
@@ -5112,15 +5135,15 @@ i {
 .sign-in {
   position: relative;
   width: 100%;
-  padding: 1.2rem 1.5rem;
+  padding: 1.5rem 1.7rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   & .logo {
-    width: 5rem;
-    height: 5rem;
+    width: 4.4rem;
+    height: 4.4rem;
   }
 
   &-card {
@@ -5129,12 +5152,12 @@ i {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 45%;
+    top: 44.3%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     & h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
       font-size: 2.9rem;
       font-weight: 700;
       line-height: 1.03;
@@ -5143,7 +5166,7 @@ i {
     }
 
     & h3 {
-      margin-bottom: 3rem;
+      margin-bottom: 2.9rem;
       font-size: 1.9rem;
       font-weight: 400;
       line-height: 1.53;
@@ -5162,7 +5185,7 @@ i {
     }
 
     & input {
-      padding: 1.15rem 1.45rem;
+      padding: 1.1rem 1.45rem;
       margin-bottom: 1.6rem;
       width: 100%;
       font-size: 1.5rem;
@@ -5179,7 +5202,7 @@ i {
     }
 
     & .btn-custom-primary {
-      margin-top: 1.2rem;
+      margin-top: .8rem;
       margin-bottom: 1.8rem;
       padding: 1.1rem 0;
       display: flex;
@@ -5187,11 +5210,10 @@ i {
       width: 100%;
       font-size: 1.65rem;
       font-weight: 500;
-      line-height: 1.05;
-      letter-spacing: -0.1px;
+      line-height: 1.27;
       color: #ffffff;
       border: none;
-      border-radius: 1rem;
+      border-radius: .5rem;
       background-color: #159cff;
     }
 
@@ -5203,7 +5225,7 @@ i {
       color: #707070;
 
       & a {
-        margin-left: .2rem;
+        //margin-left: .3rem;
         color: #159cff;
 
         &:hover,
@@ -5216,12 +5238,12 @@ i {
 
   & footer {
     padding-top: .85rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 3rem;
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 90%;
+    width: 100%;
     max-width: 120rem;
     border-top: 1.25px solid #EAEAEA;
 
@@ -5248,29 +5270,29 @@ i {
 .get-started {
   position: relative;
   width: 100%;
-  padding: 1.2rem 1.5rem;
+  padding: 1.5rem 1.7rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   & .logo {
-    width: 5rem;
-    height: 5rem;
+    width: 4.4rem;
+    height: 4.4rem;
   }
 
   &-card {
-    min-width: 36rem;
+    max-width: 36rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 45%;
+    top: 48.4%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     & h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
       font-size: 2.9rem;
       font-weight: 700;
       line-height: 1.03;
@@ -5300,8 +5322,8 @@ i {
     
 
     & input {
-      padding: 1.15rem 1.45rem;
-      margin-bottom: 1.6rem;
+      padding: 1.1rem 1.45rem;
+      margin-bottom: 2.4rem;
       width: 100%;
       font-size: 1.5rem;
       font-weight: 400;
@@ -5321,7 +5343,7 @@ i {
     }
 
     & .input-container {
-      margin-bottom: 1.6rem;
+      margin-bottom: 2.5rem;
       display: flex;
 
       & input {
@@ -5329,11 +5351,12 @@ i {
       }
 
       & input:not(:last-of-type) {
-        margin-right: 1rem;
+        margin-right: .9rem;
       }
     }
 
     & .characters {
+      margin-left: .3rem;
       margin-bottom: 2.4rem;
       margin-right: auto;
       font-size: 1.4rem;
@@ -5347,6 +5370,7 @@ i {
     }
 
     & .checkbox-container {
+      margin-left: .5rem;
       margin-bottom: 2.7rem;
       width: 100%;
       display: flex;
@@ -5356,10 +5380,11 @@ i {
       & .pretty {
         margin-right: 0;
         //margin-right: auto;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
   
       & .cb-label {
+        margin-left: .3rem;
         font-size: 1.3rem;
         font-weight: 400;
         color: #707070;
@@ -5386,12 +5411,12 @@ i {
       width: 100%;
       font-size: 1.65rem;
       font-weight: 500;
-      line-height: 1.05;
-      letter-spacing: -0.1px;
+      line-height: 1.27;
       color: #ffffff;
       border: none;
-      border-radius: 1rem;
+      border-radius: .5rem;
       background-color: #159cff;
+
     }
 
     & .info {
@@ -5402,7 +5427,7 @@ i {
       color: #707070;
 
       & a {
-        margin-left: .2rem;
+        //margin-left: .2rem;
         color: #159cff;
 
         &:hover,
@@ -5415,12 +5440,12 @@ i {
 
   & footer {
     padding-top: .85rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 3rem;
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 90%;
+    width: 100%;
     max-width: 120rem;
     border-top: 1.25px solid #EAEAEA;
 
