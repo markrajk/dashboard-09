@@ -3993,11 +3993,15 @@ i {
       & .table-header-fixed {
         max-width: 72rem;
         border: solid 1px #e6e8eb;
+        border-radius: 3px;
        
         & thead {
          
           background-color: #f7f9fa;
           border-bottom: solid 1px #e6e8eb;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          
 
           & tr {
             height: 3.7rem;
@@ -4036,6 +4040,8 @@ i {
 
         & tbody {
           max-height: calc(100vh - 40rem);
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
         }
 
         & tbody {

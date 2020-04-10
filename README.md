@@ -11,7 +11,7 @@
 - Html comented code removed
 - CSS code cleaned. Unececery code removed
 ***
-## Changes 04.08.2020
+## Changes 08.04.2020
 - Pages added:
     * company-members, company-teams, company-admin
     * user-settings-general, user-setting-teams, user-settings-advanced
@@ -40,7 +40,7 @@ Link second create new team modal or integrate in first. FIND SOLUTION!
 Link all pages and make modals work on all pages with that functionality.
  
 ***
-## Changes 05.08.2020
+## Changes 09.04.2020
 - On teams-average-charts & single-user pages small month text bellow bars changed in HTML to be capitalized instead of uppercase.
 - Added example function for create new team modals, changing content of first modal with second on confirm btn click, in html script tag.
     * Second step modal for create team is stil in html commented.
@@ -48,3 +48,17 @@ Link all pages and make modals work on all pages with that functionality.
 - General modals added on all pages, for presentational purposes.
 - Sign in page revorked.
 - Get started page added.
+***
+## Changes 10.04.2020
+- company-settings page added.
+- single-user-feedback-given page added.
+- user-settings pages now with proper header, html changed.
+- top right header dropdown link text changed on all pages.
+- company-admin subheader content changed in html.
+- general modals now working on give-feedback page (presentational purposes).
+- content of dropdowns changed on all pages.
+    * average-charts months ▼
+    * teams-comments latest ▼
+    * teams-members ... (symbol, and in all tables where it is present)
+    * teams-settings-feedback select options changed.
+- CSS changes & bug fixes.

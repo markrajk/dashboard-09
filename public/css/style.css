@@ -2555,10 +2555,13 @@ i {
       color: #9699a6; }
   .company-members .panel-body .table-header-fixed {
     max-width: 72rem;
-    border: solid 1px #e6e8eb; }
+    border: solid 1px #e6e8eb;
+    border-radius: 3px; }
     .company-members .panel-body .table-header-fixed thead {
       background-color: #f7f9fa;
-      border-bottom: solid 1px #e6e8eb; }
+      border-bottom: solid 1px #e6e8eb;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
       .company-members .panel-body .table-header-fixed thead tr {
         height: 3.7rem;
         padding: .4rem 1.7rem;
@@ -2582,7 +2585,9 @@ i {
             font-size: 1.3rem;
             margin-left: .8rem; }
     .company-members .panel-body .table-header-fixed tbody {
-      max-height: calc(100vh - 40rem); }
+      max-height: calc(100vh - 40rem);
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
     .company-members .panel-body .table-header-fixed tbody tr {
       padding: .5rem 1.7rem;
       padding-right: 3rem;
