@@ -391,7 +391,7 @@ i {
 }
 
 .page-content {
-  padding: 3.4rem 3.2rem 0 3.8rem;
+  padding: 3.4rem 3.2rem 0 3.65rem;
   width: calc(100% - 8.8rem);
   height: 100%;
 
@@ -1371,12 +1371,12 @@ i {
       margin-top: auto;
 
       &-create-new {
-        padding: 2rem 2.4rem;
+        padding: 1.8rem 2.4rem;
         display: block;
-        font-size: 1.65rem;
+        font-size: 1.7rem;
         font-weight: 700;
-        line-height: 1.33;
-        color: #333;
+        line-height: 1.35;
+        color: #333333;
         border-top: 1.75px solid #F2F2F2;
         border-bottom: 1.75px solid #F2F2F2;
 
@@ -1750,7 +1750,7 @@ i {
     }
 
     & .section-averages {
-      margin-bottom: 4.2rem;
+      margin-bottom: 4rem;
 
       & .section-header {
         margin-bottom: 0;
@@ -1776,7 +1776,7 @@ i {
           padding-top: 2.8rem;
 
           &-sub {
-            margin-bottom: -.2rem;
+            //margin-bottom: -.2rem;
             font-size: 1.2rem;
             font-weight: 500;
             line-height: 1.33;

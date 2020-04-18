@@ -236,7 +236,7 @@ i {
   height: 100%; }
 
 .page-content {
-  padding: 3.4rem 3.2rem 0 3.8rem;
+  padding: 3.4rem 3.2rem 0 3.65rem;
   width: calc(100% - 8.8rem);
   height: 100%; }
   @media (max-width: 575px) {
@@ -888,12 +888,12 @@ i {
     .sidebar-menu-footer {
       margin-top: auto; }
       .sidebar-menu-footer-create-new {
-        padding: 2rem 2.4rem;
+        padding: 1.8rem 2.4rem;
         display: block;
-        font-size: 1.65rem;
+        font-size: 1.7rem;
         font-weight: 700;
-        line-height: 1.33;
-        color: #333;
+        line-height: 1.35;
+        color: #333333;
         border-top: 1.75px solid #F2F2F2;
         border-bottom: 1.75px solid #F2F2F2; }
         .sidebar-menu-footer-create-new:hover {
@@ -1135,7 +1135,7 @@ i {
           width: 0;
           height: 0; }
     .teams-average-charts-body .section-averages {
-      margin-bottom: 4.2rem; }
+      margin-bottom: 4rem; }
       .teams-average-charts-body .section-averages .section-header {
         margin-bottom: 0; }
       .teams-average-charts-body .section-averages .section-body {
@@ -1153,7 +1153,6 @@ i {
           padding-left: 1.25rem;
           padding-top: 2.8rem; }
           .teams-average-charts-body .section-averages .section-body .progress-custom-sub {
-            margin-bottom: -.2rem;
             font-size: 1.2rem;
             font-weight: 500;
             line-height: 1.33;
