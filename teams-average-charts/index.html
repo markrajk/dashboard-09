@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Teams | Main View</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
         integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
@@ -92,7 +93,7 @@
                 </ul>
                 <div class="sidebar-menu-footer">
                     <a href="#" class="sidebar-menu-footer-create-new" data-toggle="modal"
-                        data-target="#followNewTeamModal">Follow a new team</a>
+                        data-target="#followNewTeamModal">Create a new team</a>
                     <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
                         Get the mobile app
                         <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
@@ -148,12 +149,12 @@
                             Charts
                         </a>
 
-                        <a href="../teams-comments/index.html">
-                            Comments
-                        </a>
-
                         <a href="../teams-members/index.html">
                             Members
+                        </a>
+
+                        <a href="../teams-comments/index.html">
+                            Comments
                         </a>
 
                         <a href="../teams-settings-general/index.html">
@@ -174,7 +175,22 @@
 
                     <section class="section section-averages">
                         <div class="section-header">
-                            <p>Two week averages</p>
+                            <p>Overview</p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger">
+                                    2 weeks average
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="section-body">
                             <div class="progress-custom">
