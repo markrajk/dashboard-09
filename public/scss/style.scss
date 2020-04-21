@@ -1336,11 +1336,10 @@ i {
     & .input-container {
       position: relative;
       display: flex;
-      padding: 0 2.4rem;
 
       & input {
         padding: 0;
-        padding-left: 1.3rem;
+        padding-left: 4.5rem;
         border: none;
         outline: none;
         font-size: 1.5rem;
@@ -1356,8 +1355,8 @@ i {
         margin-top: -.1rem;
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translate(100%, -50%);
+        left: 2.4rem;
+        transform: translate(0, -50%);
         font-size: 1.5rem;
         color: #9699a6;
       }
