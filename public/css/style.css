@@ -850,18 +850,25 @@ i {
         font-size: 2.65rem;
         color: #1a9cfc; }
     .sidebar-menu .input-container {
+      position: relative;
+      display: flex;
       padding: 0 2.4rem; }
       .sidebar-menu .input-container input {
+        padding: 0;
+        padding-left: 1.3rem;
         border: none;
         outline: none;
         font-size: 1.5rem;
         font-weight: 400;
-        line-height: 1.33;
         color: #333; }
         .sidebar-menu .input-container input::placeholder {
           color: #9699a6; }
       .sidebar-menu .input-container i {
-        margin-right: 0.5rem;
+        margin-top: -.1rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(100%, -50%);
         font-size: 1.5rem;
         color: #9699a6; }
     .sidebar-menu-list {
@@ -969,7 +976,8 @@ i {
             display: none; } }
         .header-top-right .input-container input {
           width: 100%;
-          padding: .5rem 3.5rem;
+          padding: .4rem 3.5rem;
+          padding-top: .6rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
@@ -981,6 +989,8 @@ i {
           border-radius: 1.6rem; }
           .header-top-right .input-container input::placeholder {
             color: #9699a6; }
+          .header-top-right .input-container input i {
+            margin-top: -.1rem; }
         .header-top-right .input-container i {
           position: absolute;
           top: 50%;
@@ -1094,7 +1104,8 @@ i {
     top: 0;
     left: 0;
     max-width: 103rem;
-    border-top: 1px solid #e1e1e1; }
+    border-top: 1px solid #e1e1e1;
+    z-index: 10; }
   .teams-average-charts::-webkit-scrollbar {
     /* WebKit */
     width: 0;
@@ -1111,8 +1122,8 @@ i {
         margin-bottom: 2.2rem;
         padding: 1rem 1.25rem;
         padding-right: 1.5rem;
-        background-color: #f5f7f8;
-        border-radius: .1rem; }
+        background-color: #F7F9FA;
+        border-radius: 2.5px; }
         .teams-average-charts-body .section-header p {
           font-size: 1.25rem;
           font-weight: 500;

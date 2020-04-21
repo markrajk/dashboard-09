@@ -1334,14 +1334,17 @@ i {
     }
 
     & .input-container {
+      position: relative;
+      display: flex;
       padding: 0 2.4rem;
 
       & input {
+        padding: 0;
+        padding-left: 1.3rem;
         border: none;
         outline: none;
         font-size: 1.5rem;
         font-weight: 400;
-        line-height: 1.33;
         color: #333;
 
         &::placeholder {
@@ -1350,7 +1353,11 @@ i {
       }
 
       & i {
-        margin-right: 0.5rem;
+        margin-top: -.1rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(100%, -50%);
         font-size: 1.5rem;
         color: #9699a6;
       }
@@ -1518,7 +1525,8 @@ i {
   
         & input {
           width: 100%;
-          padding: .5rem 3.5rem;
+          padding: .4rem 3.5rem;
+          padding-top: .6rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
@@ -1531,6 +1539,10 @@ i {
   
           &::placeholder {
             color: #9699a6;
+          }
+
+          & i {
+            margin-top: -.1rem;
           }
         }
   
@@ -1710,6 +1722,7 @@ i {
     left: 0;
     max-width: 103rem;
     border-top: 1px solid #e1e1e1;
+    z-index: 10;
   }
 
 
@@ -1737,8 +1750,8 @@ i {
         margin-bottom: 2.2rem;
         padding: 1rem 1.25rem;
         padding-right: 1.5rem;
-        background-color: #f5f7f8;
-        border-radius: .1rem;
+        background-color: #F7F9FA;
+        border-radius: 2.5px;
 
         & p {
           font-size: 1.25rem;
