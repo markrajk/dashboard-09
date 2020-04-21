@@ -1439,8 +1439,6 @@ i {
 // HEADER START
 // ==================================
 .header {
-  padding-right: 3.2rem;
-  //padding-bottom: .5rem;
   font-size: 1.6rem;
 
   // &::after {
@@ -1452,155 +1450,172 @@ i {
   &-top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    &-title {
-      margin-right: auto;
-      font-size: 2.8rem;
-      font-weight: 500;
-      line-height: 1.32;
-      letter-spacing: -0.28px;
-      color: #1f1f1f;
-    }
+    &-left {
 
-    & .input-container {
-      //min-width: 20rem;
-      width: 100%;
-      max-width: 25.6rem;
-      margin-left: 1rem;
-      position: relative;
-
-      & input {
-        width: 100%;
-        padding: .5rem 3.5rem;
-        padding-right: 1.5rem;
-        border: none;
-        outline: none;
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 1.33;
-        color: #333;
-        border: 1px solid #DEDEDE;
-        border-radius: 1.6rem;
-
-        &::placeholder {
-          color: #9699a6;
-        }
+      &-title {
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1.32;
+        letter-spacing: -0.28px;
+        color: #1f1f1f;
       }
 
-      & i {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(90%, -50%);
-        font-size: 1.5rem;
+      &-small {
+        margin-top: 0.7rem;
+        font-size: 1.45rem;
+        line-height: 1.38;
+        font-weight: 400;
         color: #9699a6;
       }
-
-      @include respond(desktop-xsm) {
-        margin-left: 0;
-        width: 15rem;
-      }
     }
 
-    & .bell {
-      margin-left: 1.3rem;
-      margin-right: 2rem;
-      font-size: 2rem;
-      color: #647282;
-    }
+    &-right {
+      display: flex;
+      align-items: center;
 
-    & .face {
-      width: 3.2rem;
-      height: 3.2rem;
-    }
-
-    & .dropdown-custom {
-      padding: 0;
       
-      &-trigger {
-        border: 0;
-        margin: 0;
-        padding: 0;
 
-        &:focus,
-        &:active {
-          border: 0;
-          box-shadow: none;
+      & .input-container {
+        width: 25.6rem;
+        position: relative;
+
+        @include respond(desktop-sm) {
+          width: auto;
+          max-width: 20rem;
         }
+
+        @include respond(desktop-xsm) {
+          min-width: 10rem;
+          max-width: 15rem;
+        }
+
+        @include respond(desktop-xxsm) {
+          display: none;
+        }
+  
+        & input {
+          width: 100%;
+          padding: .5rem 3.5rem;
+          padding-right: 1.5rem;
+          border: none;
+          outline: none;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.33;
+          color: #333;
+          border: 1px solid #DEDEDE;
+          border-radius: 1.6rem;
+  
+          &::placeholder {
+            color: #9699a6;
+          }
+        }
+  
+        & i {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(90%, -50%);
+          font-size: 1.5rem;
+          color: #9699a6;
+        }
+
+      }
+  
+      & .bell {
+        margin-left: 1.3rem;
+        margin-right: 2rem;
+        font-size: 2rem;
+        color: #647282;
+      }
+  
+      & .face {
+        width: 3.2rem;
+        height: 3.2rem;
       }
 
-      &-list {
-        min-width: 26.6rem;
-
-        &-header {
-          margin-bottom: 1.5rem;
-          padding: 2.3rem 1.6rem;
-          display: flex;
-          align-items: center;
-          border-bottom: 1px solid #E6E8EB;
-
-          & img {
-            margin-right: 1.2rem;
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
+      & .dropdown-custom {
+        padding: 0;
+        
+        &-trigger {
+          border: 0;
+          margin: 0;
+          padding: 0;
+  
+          &:focus,
+          &:active {
+            border: 0;
+            box-shadow: none;
           }
-
-          & .user-info {
-
-            &-name {
-              font-size: 1.5rem;
-              font-weight: 400;
-              line-height: 1.33;
-              color: #3d464d;
+        }
+  
+        &-list {
+          min-width: 26.6rem;
+  
+          &-header {
+            margin-bottom: 1.5rem;
+            padding: 2.3rem 1.6rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #E6E8EB;
+  
+            & img {
+              margin-right: 1.2rem;
+              width: 4rem;
+              height: 4rem;
+              border-radius: 50%;
             }
-
-            & a {
-              margin-left: 0;
-              font-size: 1.3rem;
-              line-height: 1.38;
-              color: #0070e0;
-
-              &:hover,
-              &:focus {
-                text-decoration: underline;
+  
+            & .user-info {
+  
+              &-name {
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.33;
+                color: #3d464d;
+              }
+  
+              & a {
+                margin-left: 0;
+                font-size: 1.3rem;
+                line-height: 1.38;
+                color: #0070e0;
+  
+                &:hover,
+                &:focus {
+                  text-decoration: underline;
+                }
               }
             }
           }
-        }
-
-        &-footer {
-          margin-top: 1.5rem;
-          padding: 2rem 1.6rem;
-          border-top: 1px solid #E6E8EB;
-          cursor: pointer;
-
-          &:hover,
-          &:focus {
-          background-color: #f7f9fa;
-        }
-
-          & a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            color: inherit;
-            margin-left: 0;
-            font-size: 1.5rem;
-            font-weight: 400;
-            line-height: 1.33;
+  
+          &-footer {
+            margin-top: 1.5rem;
+            padding: 2rem 1.6rem;
+            border-top: 1px solid #E6E8EB;
+            cursor: pointer;
+  
+            &:hover,
+            &:focus {
+            background-color: #f7f9fa;
+          }
+  
+            & a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              color: inherit;
+              margin-left: 0;
+              font-size: 1.5rem;
+              font-weight: 400;
+              line-height: 1.33;
+            }
           }
         }
       }
     }
-  }
-
-  &-small {
-    margin-top: 0.7rem;
-    font-size: 1.45rem;
-    line-height: 1.38;
-    font-weight: 400;
-    color: #9699a6;
   }
 
   &-bottom {
