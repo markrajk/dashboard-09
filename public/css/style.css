@@ -836,7 +836,7 @@ i {
     .sidebar-menu-header {
       position: relative;
       padding: 2rem 2.4rem 0;
-      margin-bottom: 1.7rem;
+      margin-bottom: 1.4rem;
       display: flex;
       justify-content: space-between;
       align-items: center; }
@@ -853,7 +853,7 @@ i {
       display: flex; }
       .sidebar-menu .input-container input {
         padding: 0;
-        padding-left: 4.5rem;
+        padding-left: 4.8rem;
         border: none;
         outline: none;
         font-size: 1.5rem;
@@ -874,6 +874,7 @@ i {
       padding: 0 1.2rem; }
       .sidebar-menu-list-item {
         padding: 0.2rem 0;
+        padding-left: .3rem;
         width: 100%; }
         .sidebar-menu-list-item-link {
           font-weight: 400;
@@ -1059,11 +1060,12 @@ i {
     align-items: center;
     padding: 4.5rem 0 1.1rem; }
     .header-bottom .choose {
+      margin-left: .2rem;
       display: flex;
       align-items: center;
       margin-right: auto; }
       .header-bottom .choose a {
-        font-size: 1.4REM;
+        font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
         text-transform: capitalize; }
@@ -1077,7 +1079,7 @@ i {
           margin-right: 0.8rem;
           font-size: 1.8rem; }
         .header-bottom .choose a:not(:last-child) {
-          margin-right: 2.7rem; }
+          margin-right: 2.6rem; }
           @media (max-width: 379px) {
             .header-bottom .choose a:not(:last-child) {
               margin-right: 1.5rem; } }
