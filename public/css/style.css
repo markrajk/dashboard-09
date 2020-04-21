@@ -415,7 +415,6 @@ i {
   border: 1.25px solid #E5E5E5; }
 
 .modal-custom.modal .modal-dialog {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
   max-width: 53.3rem; }
 .modal-custom.modal .modal-content {
   border-radius: 17px;
