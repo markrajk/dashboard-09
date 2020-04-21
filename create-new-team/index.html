@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | User Settings | Teams</title>
+    <title>Dashboard | Teams | Settings - Feedback</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
         integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
@@ -27,7 +27,7 @@
                             <img src="../public/img/logo-png.png" alt="logo">
                         </a>
                     </li>
-                    <li class="sidebar-main-item">
+                    <li class="sidebar-main-item active">
                         <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
                             <i class="icon-users"></i>
                         </a>
@@ -46,7 +46,7 @@
                             <i class="icon-business"></i>
                         </a>
                     </li>
-                    <li class="sidebar-main-item active">
+                    <li class="sidebar-main-item">
                         <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
                             <i class="icon-settings"></i>
                         </a>
@@ -105,9 +105,9 @@
             <header class="header">
                 <div class="header-top">
                     <div class="header-top-left text-truncate">
-                        <h1 class="header-top-left-title text-truncate">User settings</h1>
+                        <h1 class="header-top-left-title text-truncate">Create a new team</h1>
                         <p class="header-top-left-small text-truncate">
-                            Here you can edit your personal profile and settings.
+                            Create a new team free of charge.
                         </p>
                     </div>
                     <div class="header-top-right">
@@ -147,115 +147,139 @@
                 </div>
                 <div class="header-bottom">
                     <div class="choose">
-                        <a href="../user-settings-general/index.html">
-                            General
+                        <a href="../create-new-team/index.html" class="active">
+                            Free team
                         </a>
 
-                        <a href="../user-settings-teams/index.html" class="active">
-                            Teams
-                        </a>
-
-                        <a href="../user-settings-advanced/index.html">
-                            Advanced tools
+                        <a href="../create-new-team/index.html">
+                            New business team
                         </a>
                     </div>
                 </div>
 
             </header>
 
-            <main class="user-settings-teams">
-                <div class="user-settings-teams-header">
-                    <p class="subheader-text">Teams</p>
-                    <p class="subheader-text-small">You are member of following teams.</p>
+            <main class="create-new-team">
+                <div class="create-new-team-header">
+                    <div class="create-new-team-header-team">
+                        <img src="../public/img/user-placeholder.png" alt="#" class="create-new-team-header-team-img">
+                        <div class="create-new-team-header-team-info">
+                            <p class="create-new-team-header-team-name">Team name</p>
+                            <a href="#" class="create-new-team-header-team-picture">Add a team picture</a>
+                        </div>
+                    </div>
+
+                    <div class="create-new-team-header-inputs">
+                        <div class="input-container">
+                            <label for="cnt-team-name">Name</label>
+                            <input type="text" placeholder="Give your team a name" name="cnt-team-name" id="cnt-team-name">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="cnt-team-desc">Short description</label>
+                            <input type="text" placeholder="Give your team a name" name="cnt-team-desc" id="cnt-team-desc">
+                        </div>
+                    </div>
                 </div>
-                <div class="user-settings-teams-body">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <table class="table-header-fixed flex-table">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Team lead</th>
-                                        <th>Members</th>
-                                        <th>
-                                            <div class="dropdown-custom">
-                                                <a href="#" class="dropdown-custom-trigger">
-                                                    <i class="icon-list"></i>
-                                                    <i class="icon-caret-down"></i>
-                                                </a>
-                                                <ul class="dropdown-custom-list">
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 1</a>
-                                                    </li>
+                <div class="create-new-team-body">
+                    <p class="create-new-team-body-caption">Invite members</p>
+                    <table class="table-custom table-01">
+                        <thead class="table-custom-head">
+                            <tr>
+                                <td class="table-custom-col-01">Email</td>
+                                <td class="table-custom-col-02">Status</td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-custom-body">
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <p class="text-truncate">johan.gustav@gmail.com</p>
+                                </td>
+                                <td class="table-custom-col-02">
+                                    <select name="create-new-01" id="create-new-01">
+                                        <option value="value01" selected>Basic member</option>
+                                        <option value="value01">Option I</option>
+                                        <option value="value01">Option II</option>
+                                        <option value="value01">Option III</option>
+                                    </select>
+                                </td>
+                            </tr>
 
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 2</a>
-                                                    </li>
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <p class="text-truncate">johan.gustav@gmail.com</p>
+                                </td>
+                                <td class="table-custom-col-02">
+                                    <select name="create-new-02" id="create-new-02">
+                                        <option value="value01" selected>Member</option>
+                                        <option value="value01">Option I</option>
+                                        <option value="value01">Option II</option>
+                                        <option value="value01">Option III</option>
+                                    </select>
+                                </td>
+                            </tr>
 
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 3</a>
-                                                    </li>
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <p class="text-truncate">johan.gustav@gmail.com</p>
+                                </td>
+                                <td class="table-custom-col-02">
+                                    <select name="create-new-03" id="create-new-03">
+                                        <option value="value01" selected>Member</option>
+                                        <option value="value01">Option I</option>
+                                        <option value="value01">Option II</option>
+                                        <option value="value01">Option III</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 4</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="table-header-fixed-col-1">
-                                            <a href="../single-user/index.html">Team Software</a>
-                                        </td>
-                                        <td class="table-header-fixed-col-2">
-                                            <p>martin.billo@gmail.com</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-3">
-                                            <p>32 members</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-4">
-                                            <div class="dropdown-custom">
-                                                <a href="#" class="dropdown-custom-trigger">
-                                                    <i class="icon-ellipsis"></i>
-                                                </a>
-                                                <ul class="dropdown-custom-list">
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Quit team</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                    <a href="#" class="btn-custom-primary">Create team</a>
 
-                                    <tr>
-                                        <td class="table-header-fixed-col-1">
-                                            <a href="../single-user/index.html">Team Hardware</a>
-                                        </td>
-                                        <td class="table-header-fixed-col-2">
-                                            <p>jörgen.vogel@gmail.com</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-3">
-                                            <p>12 members</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-4">
-                                            <div class="dropdown-custom">
-                                                <a href="#" class="dropdown-custom-trigger">
-                                                    <i class="icon-ellipsis"></i>
-                                                </a>
-                                                <ul class="dropdown-custom-list">
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Quit team</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                </div>
 
+                <!-- FEEDBACK REQUEST MODAL -->
+                <div class="modal fade modal-custom" id="feedbackRequestModal" tabindex="-1" role="dialog"
+                    aria-labelledby="feedbackRequestModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">Create new feedback request</h3>
 
-                                </tbody>
-                            </table>
+                                <label for="feedback-from">Following person</label>
+                                <div class="input-container">
+                                    <i class="icon-search"></i>
+                                    <input type="text" class="modal-custom-input" id="feedback-from"
+                                        name="feedback-from" placeholder="Search">
+                                </div>
+
+                                <label for="feedback-to">Will be requested to give feedback to</label>
+                                <div class="input-container">
+                                    <i class="icon-search"></i>
+                                    <input type="text" class="modal-custom-input" id="feedback-to" name="feedback-to"
+                                        placeholder="Search">
+                                </div>
+
+                                
+
+                                <div class="frequency">
+                                    <h4>Frequency</h4>
+                                    <a href="#" class="modal-custom-btn-rect">Weekly</a>
+                                    <a href="#" class="modal-custom-btn-rect">Every 2nd week</a>
+                                    <a href="#" class="modal-custom-btn-rect">Every 3rd week</a>
+                                    <a href="#" class="modal-custom-btn-rect active">Monthly</a>
+                                </div>
+
+                                <a href="#" class="modal-custom-btn-round">Create request</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -293,26 +317,26 @@
 
                 <!-- CREATE TEAM MODAL 02 -->
                 <!-- <div class="modal fade modal-custom" id="createNewTeamModal02" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModal02Title" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="modal-custom-title">Invite members</h3>
-                            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                            <a href="#" class="modal-custom-btn-round">Confirm</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
-                        </div>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close"></i>
+                        </button>
                     </div>
+                    <div class="modal-body">
+                        <h3 class="modal-custom-title">Invite members</h3>
+                        <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
+                        <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
+                        <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
+                        <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
+                        <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
+                        <a href="#" class="modal-custom-btn-round">Confirm</a>
+                        <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
                     </div>
-                </div> -->
+                </div>
+                </div>
+            </div> -->
 
                 <!-- FOLLOW NEW TEAM MODAL -->
                 <div class="modal fade modal-custom" id="followNewTeamModal" tabindex="-1" role="dialog"
@@ -394,8 +418,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </main>
         </div>
     </div>

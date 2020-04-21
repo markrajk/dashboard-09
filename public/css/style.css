@@ -237,7 +237,7 @@ i {
 
 .page-content {
   padding: 3.4rem 3.2rem 0 3.65rem;
-  width: calc(100% - 8.8rem);
+  width: calc(100% - 8.96rem);
   height: 100%; }
   @media (max-width: 575px) {
     .page-content {
@@ -962,6 +962,13 @@ i {
       .header-top-right .input-container {
         width: 25.6rem;
         position: relative; }
+        @media (max-width: 1199px) {
+          .header-top-right .input-container {
+            width: 24rem; } }
+        @media (max-width: 991px) {
+          .header-top-right .input-container {
+            width: auto;
+            max-width: 22rem; } }
         @media (max-width: 767px) {
           .header-top-right .input-container {
             width: auto;
@@ -1465,10 +1472,10 @@ i {
         padding: .6rem; }
         .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger i:first-of-type {
           margin-top: -.1rem;
-          font-size: 1rem;
+          font-size: 1.2rem;
           margin-left: .8rem; }
           .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger i:first-of-type + i {
-            font-size: .7rem; }
+            font-size: .8rem; }
       .teams-people-view .panel-body .table-header-fixed thead th:nth-of-type(1) span {
         margin-left: 1.25rem; }
   .teams-people-view .panel-body .table-header-fixed tbody {
@@ -1745,11 +1752,11 @@ i {
           margin-right: 1.3rem;
           font-size: 2.5rem; }
           .teams-settings-feedback-body .table-01 .table-custom-col-01 i.blue {
-            color: #2a5699; }
+            color: #0A84FF; }
           .teams-settings-feedback-body .table-01 .table-custom-col-01 i.green {
-            color: #207245; }
+            color: #32D74B; }
           .teams-settings-feedback-body .table-01 .table-custom-col-01 i.red {
-            color: #d24625; }
+            color: #FF9500; }
         .teams-settings-feedback-body .table-01 .table-custom-col-01 p {
           font-size: 1.4rem;
           line-height: 1.36;
@@ -1835,6 +1842,9 @@ i {
     margin-right: 1.2rem; }
     .teams-settings-rights .btn-custom-primary.outline:hover, .teams-settings-rights .btn-custom-primary.outline:focus {
       background-color: #f5f5f5; }
+    .teams-settings-rights .btn-custom-primary.outline.blue {
+      color: #1165F4;
+      border-color: #1165F4; }
   .teams-settings-rights-body {
     max-height: calc(100vh - 26.5rem - 1.5px); }
     .teams-settings-rights-body .section-caption {
@@ -1876,7 +1886,7 @@ i {
               font-size: .8rem; }
           .teams-settings-rights-body .panel-body .table-header-fixed thead th {
             font-size: 1.2rem;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1.33;
             color: #647282; }
             .teams-settings-rights-body .panel-body .table-header-fixed thead th i {
@@ -1935,8 +1945,46 @@ i {
       margin-bottom: 4.6rem; }
       .teams-settings-rights-body .table-01 tbody {
         max-height: 22.4rem !important; }
-    .teams-settings-rights-body .table-02 tbody {
-      max-height: 22.4rem !important; }
+    .teams-settings-rights-body .table-02 {
+      border-bottom: none !important; }
+      .teams-settings-rights-body .table-02 tbody {
+        max-height: 22.4rem !important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+    .teams-settings-rights-body .table-bottom-input {
+      padding: 1.2rem 1.7rem;
+      padding-right: 3rem;
+      display: flex;
+      align-items: center;
+      border: solid 1px #e6e8eb;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
+      .teams-settings-rights-body .table-bottom-input input {
+        border: 0;
+        outline: none;
+        font-size: 1.35rem;
+        font-weight: 400; }
+      .teams-settings-rights-body .table-bottom-input-col-1 {
+        flex: 1; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-bottom-input-col-1 {
+            display: none; } }
+        .teams-settings-rights-body .table-bottom-input-col-1 input::placeholder {
+          color: #1165F4; }
+      .teams-settings-rights-body .table-bottom-input-col-2 {
+        flex: 1.32; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-bottom-input-col-2 {
+            flex: 1; } }
+      .teams-settings-rights-body .table-bottom-input-col-3 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        white-space: nowrap;
+        flex: 1.35; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-bottom-input-col-3 {
+            flex: 1.7; } }
 
 .give-feedback {
   padding: 2.5rem 0;
@@ -1999,7 +2047,7 @@ i {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
       grid-gap: 2.8rem 3.2rem;
-      max-height: calc(100vh - 35.8rem);
+      max-height: calc(100vh - 36rem - 2px);
       padding-right: calc(100% - 79rem);
       overflow-y: auto;
       scrollbar-width: none;
@@ -2566,6 +2614,238 @@ i {
           font-size: 1.3rem;
           line-height: 1.38;
           color: #383838; }
+
+.report-team,
+.report-member {
+  padding: 2.5rem 0;
+  padding-bottom: 0;
+  border-top: 1px solid #e1e1e1;
+  max-width: 72rem;
+  padding-top: 2.6rem; }
+  .report-team-header,
+  .report-member-header {
+    margin-bottom: 3rem; }
+    .report-team-header .btn-custom-primary,
+    .report-member-header .btn-custom-primary {
+      padding: .4em 1.2em;
+      padding-bottom: .42em;
+      margin-right: 1.2rem; }
+      .report-team-header .btn-custom-primary.outline:hover, .report-team-header .btn-custom-primary.outline:focus,
+      .report-member-header .btn-custom-primary.outline:hover,
+      .report-member-header .btn-custom-primary.outline:focus {
+        background-color: #f5f5f5; }
+  .report-team-body,
+  .report-member-body {
+    padding-bottom: 5rem;
+    max-height: calc(100vh - 25.2rem);
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */ }
+    .report-team-body::-webkit-scrollbar,
+    .report-member-body::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0; }
+    .report-team-body .section-header-bar,
+    .report-member-body .section-header-bar {
+      margin-bottom: 3.7rem;
+      padding-left: 1.2rem;
+      display: flex;
+      align-items: center;
+      height: 37px;
+      border-radius: 2.5px;
+      background-color: #f7f9fa; }
+      .report-team-body .section-header-bar-title,
+      .report-member-body .section-header-bar-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.28;
+        color: #647282; }
+    .report-team-body-options,
+    .report-member-body-options {
+      margin-bottom: 7rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 4rem 0; }
+      @media (max-width: 379px) {
+        .report-team-body-options,
+        .report-member-body-options {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 1fr); } }
+      .report-team-body-options-list-title,
+      .report-member-body-options-list-title {
+        margin-bottom: 1.8rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.36;
+        color: #1b2733; }
+      .report-team-body-options-list-item,
+      .report-member-body-options-list-item {
+        display: flex;
+        align-items: center; }
+        .report-team-body-options-list-item .pretty,
+        .report-member-body-options-list-item .pretty {
+          margin-right: 0;
+          font-size: 1.5rem; }
+        .report-team-body-options-list-item-label,
+        .report-member-body-options-list-item-label {
+          display: inline-flex;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          color: #3d464d;
+          cursor: pointer; }
+        .report-team-body-options-list-item:not(:last-child),
+        .report-member-body-options-list-item:not(:last-child) {
+          margin-bottom: 1.7rem; }
+    .report-team-body .btn-custom-primary,
+    .report-member-body .btn-custom-primary {
+      padding: .8rem 2.1rem;
+      background-color: #1273dd;
+      border-color: #1273dd; }
+
+.create-new-team {
+  padding: 2.5rem 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: calc(100% - 72rem);
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  .create-new-team::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0; }
+  .create-new-team::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-width: 80.5rem;
+    border-top: 1px solid #e1e1e1; }
+  .create-new-team-header {
+    padding-left: .5rem;
+    padding-top: 3rem;
+    margin-bottom: 3.8rem; }
+    .create-new-team-header-team {
+      margin-bottom: 3.8rem;
+      display: flex;
+      align-items: center; }
+      .create-new-team-header-team-img {
+        margin-right: 1.9rem;
+        width: 6.2rem;
+        height: 6.2rem;
+        border-radius: 50%; }
+      .create-new-team-header-team-name {
+        margin-bottom: .3rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.53;
+        color: #000000; }
+      .create-new-team-header-team-picture {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #656565; }
+    .create-new-team-header-inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 3.2rem; }
+      @media (max-width: 379px) {
+        .create-new-team-header-inputs {
+          grid-template-columns: 1fr;
+          grid-gap: 3.2rem 0; } }
+      .create-new-team-header-inputs .input-container label {
+        margin-bottom: 1.1rem;
+        display: block;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.35;
+        color: #1b2733; }
+      .create-new-team-header-inputs .input-container input {
+        width: 100%;
+        padding: .8rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.38;
+        color: #333;
+        border-radius: 3px;
+        border: solid 1px #d1d7dd; }
+        .create-new-team-header-inputs .input-container input::placeholder {
+          color: #737373; }
+  .create-new-team .btn-custom-primary {
+    padding: .4em 1.8em;
+    padding-bottom: .42em;
+    margin-right: 1.2rem; }
+    .create-new-team .btn-custom-primary.outline:hover, .create-new-team .btn-custom-primary.outline:focus {
+      background-color: #f5f5f5; }
+  .create-new-team-body {
+    max-height: calc(100vh - 27.8rem - 1.5px); }
+    .create-new-team-body-caption {
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #1b2733; }
+    .create-new-team-body .table-custom th, .create-new-team-body .table-custom td {
+      display: flex;
+      align-items: center; }
+    @media (max-width: 575px) {
+      .create-new-team-body .table-custom td > * {
+        font-size: 1.2rem; } }
+    .create-new-team-body .table-custom-head {
+      height: 4.2rem;
+      font-size: 1.2rem;
+      line-height: 1.33;
+      color: #647282;
+      background-color: #f7f9fa;
+      border: solid 1px #e6e8eb;
+      border-radius: 3px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+      .create-new-team-body .table-custom-head tr {
+        padding: 1.3rem 1.7rem; }
+    .create-new-team-body .table-custom-body {
+      border: solid 1px #e6e8eb;
+      border-radius: 3px;
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      .create-new-team-body .table-custom-body tr {
+        padding: 1.2rem 1.7rem; }
+    .create-new-team-body .table-01 {
+      margin-top: 1.5rem;
+      margin-bottom: 3.2rem; }
+      .create-new-team-body .table-01 .table-custom-body tr:not(:last-of-type) {
+        border-bottom: solid 1px #e6e8eb; }
+      .create-new-team-body .table-01 .table-custom-col-01 {
+        flex: 1;
+        margin-right: 1.3rem; }
+        .create-new-team-body .table-01 .table-custom-col-01 p {
+          font-size: 1.4rem;
+          line-height: 1.36;
+          color: #1b2733; }
+      .create-new-team-body .table-01 .table-custom-col-02 {
+        flex: .85;
+        line-height: 1.36; }
+        .create-new-team-body .table-01 .table-custom-col-02 select {
+          width: 95%;
+          outline: none;
+          padding: .55rem 1.3rem;
+          font-size: 1.4rem;
+          color: #1b2733;
+          line-height: 1.36;
+          color: #1b2733;
+          border-radius: 4px;
+          border: solid 1px #c1c7cd; }
+          .create-new-team-body .table-01 .table-custom-col-02 select option {
+            font-size: 1.2rem;
+            padding-left: 1.3rem; }
 
 .company-members {
   padding: 2.5rem 0;

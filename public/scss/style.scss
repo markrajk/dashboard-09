@@ -413,7 +413,7 @@ i {
 
 .page-content {
   padding: 3.4rem 3.2rem 0 3.65rem;
-  width: calc(100% - 8.8rem);
+  width: calc(100% - 8.96rem);
   height: 100%;
 
   @include respond(desktop-xsm) {
@@ -1508,6 +1508,15 @@ i {
         width: 25.6rem;
         position: relative;
 
+        @include respond(desktop-lg) {
+          width: 24rem;
+        }
+
+        @include respond(desktop-md) {
+          width: auto;
+          max-width: 22rem;
+        }
+
         @include respond(desktop-sm) {
           width: auto;
           max-width: 20rem;
@@ -2291,11 +2300,11 @@ i {
                 padding: .6rem;
                 & i:first-of-type {
                   margin-top: -.1rem;
-                  font-size: 1rem;
+                  font-size: 1.2rem;
                   margin-left: .8rem;
 
                   & + i {
-                    font-size: .7rem;
+                    font-size: .8rem;
                   }
                 }
               }
@@ -2773,15 +2782,15 @@ i {
           font-size: 2.5rem;
 
           &.blue {
-            color: #2a5699;
+            color: #0A84FF;
           }
 
           &.green {
-            color: #207245;
+            color: #32D74B;
           }
 
           &.red {
-            color: #d24625;
+            color: #FF9500;
           }
         }
 
@@ -2930,6 +2939,11 @@ i {
       &:focus {
         background-color: #f5f5f5;
       }
+
+      &.blue {
+        color: #1165F4;
+        border-color: #1165F4;
+      }
     }
   }
 
@@ -2995,7 +3009,7 @@ i {
             
             & th {
               font-size: 1.2rem;
-              font-weight: 500;
+              font-weight: 400;
               line-height: 1.33;
               color: #647282;
   
@@ -3104,8 +3118,64 @@ i {
     }
 
     & .table-02 {
+      border-bottom: none!important;
       & tbody {
         max-height: 22.4rem!important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    
+    & .table-bottom-input {
+      padding: 1.2rem 1.7rem;
+      padding-right: 3rem;
+      display: flex;
+      align-items: center;
+      border: solid 1px #e6e8eb;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+
+      & input {
+        border: 0;
+        outline: none;
+        font-size: 1.35rem;
+        font-weight: 400;
+      }
+
+      &-col-1 {
+        flex: 1;
+
+        @include respond(desktop-xsm) {
+          display: none;
+        }
+
+        & input {
+          
+          &::placeholder {
+            color: #1165F4;
+          }
+        }
+      }
+
+      &-col-2 {
+        flex: 1.32;
+
+        @include respond(desktop-xsm) {
+          flex: 1;
+        }
+      }
+
+      &-col-3 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        white-space: nowrap;
+        flex: 1.35;
+
+        @include respond(desktop-xsm) {
+          flex: 1.7;
+        }
       }
     }
 
@@ -3201,7 +3271,7 @@ i {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
       grid-gap: 2.8rem 3.2rem;
-      max-height: calc(100vh - 35.8rem);
+      max-height: calc(100vh - 36rem - 2px);
       padding-right: calc(100% - 79rem);
 
       overflow-y: auto;
@@ -4061,6 +4131,348 @@ i {
 }
 // ==================================
 // SINGLE USER FEEDBACK END
+// ==================================
+
+
+
+// ==================================
+// REPORT TEAM START
+// ==================================
+.report-team,
+.report-member {
+  padding:2.5rem 0;
+  padding-bottom: 0;
+  border-top: 1px solid #e1e1e1;
+  max-width: 72rem;
+  padding-top: 2.6rem;
+  //padding-right: calc(100% - 72rem);
+
+  &-header {
+    margin-bottom: 3rem;
+
+    .btn-custom-primary {
+      padding: .4em 1.2em;
+      padding-bottom: .42em;
+      margin-right: 1.2rem;
+
+      &.outline {
+        &:hover,
+        &:focus {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  &-body {
+    padding-bottom: 5rem;
+    max-height: calc(100vh - 25.2rem);
+
+      overflow-y: auto;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+    
+      &::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+      }
+
+    & .section-header-bar {
+      margin-bottom: 3.7rem;
+      padding-left: 1.2rem;
+      display: flex;
+      align-items: center;
+      height: 37px;
+      border-radius: 2.5px;
+      background-color: #f7f9fa;
+
+      &-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.28;
+        color: #647282;
+      }
+    }
+
+    &-options {
+      margin-bottom: 7rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 4rem 0;
+      
+
+      @include respond(desktop-xxsm) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+
+      &-list {
+
+        &-title {
+          margin-bottom: 1.8rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.36;
+          color: #1b2733;
+        }
+        &-item {
+          display: flex;
+          align-items: center;
+
+          & .pretty {
+            margin-right: 0;
+            font-size: 1.5rem;
+          }
+          
+          &-label {
+            display: inline-flex;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.36;
+            color: #3d464d;
+            cursor: pointer;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 1.7rem;
+          }
+        }
+      }
+    }
+
+    & .btn-custom-primary {
+      padding: .8rem 2.1rem;
+      background-color: #1273dd;
+      border-color: #1273dd;
+    }
+  }
+}
+// ==================================
+// REPORT TEAM END
+// ==================================
+
+
+
+
+// ==================================
+// CREATE TEAM START
+// ==================================
+.create-new-team {
+  padding:2.5rem 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: calc(100% - 72rem);
+
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-width: 80.5rem;
+    border-top: 1px solid #e1e1e1;
+  }
+
+
+  &-header {
+    padding-left: .5rem;
+    padding-top: 3rem;
+    margin-bottom: 3.8rem;
+
+    &-team {
+      margin-bottom: 3.8rem;
+      display: flex;
+      align-items: center;
+
+      &-img {
+        margin-right: 1.9rem;
+        width: 6.2rem;
+        height: 6.2rem;
+        border-radius: 50%;
+      }
+
+      &-name {
+        margin-bottom: .3rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.53;
+        color: #000000;
+      }
+
+      &-picture {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #656565;
+      }
+    }
+
+    &-inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 3.2rem;
+
+      @include respond(desktop-xxsm) {
+        grid-template-columns: 1fr;
+        grid-gap: 3.2rem 0;
+      }
+
+      & .input-container {
+
+        & label {
+          margin-bottom: 1.1rem;
+          display: block;
+          font-size: 1.7rem;
+          font-weight: 400;
+          line-height: 1.35;
+          color: #1b2733;
+        }
+
+        & input {
+          width: 100%;
+          //max-width: 36rem;
+          padding: .8rem;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.38;
+          color: #333;
+          border-radius: 3px;
+          border: solid 1px #d1d7dd;
+          
+          &::placeholder {
+            color: #737373;
+          }
+        }
+      }
+    }
+  }
+
+  & .btn-custom-primary {
+    padding: .4em 1.8em;
+    padding-bottom: .42em;
+    margin-right: 1.2rem;
+
+    &.outline {
+      &:hover,
+      &:focus {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+
+  &-body {
+    max-height: calc(100vh - 27.8rem - 1.5px);
+
+    &-caption {
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #1b2733;
+    }
+
+    & .table-custom {
+
+      & th, & td {
+        display: flex;
+        align-items: center;
+      }
+
+      & td > * {
+        @include respond(desktop-xsm) {
+          font-size: 1.2rem;
+        }
+      }
+
+      &-head {
+        height: 4.2rem;
+        font-size: 1.2rem;
+        line-height: 1.33;
+        color: #647282;
+        background-color: #f7f9fa;
+        border: solid 1px #e6e8eb;
+        border-radius: 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        & tr {
+          padding: 1.3rem 1.7rem;
+        }
+      }
+
+      &-body {
+        border: solid 1px #e6e8eb;
+        border-radius: 3px;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        & tr {
+          padding: 1.2rem 1.7rem;
+        }
+      }
+    }
+
+    & .table-01 {
+      margin-top: 1.5rem;
+      margin-bottom: 3.2rem;
+
+      & .table-custom-body tr {
+        &:not(:last-of-type) {
+          border-bottom: solid 1px #e6e8eb;
+        }
+      }
+
+
+      .table-custom-col-01 {
+        flex: 1;
+        margin-right: 1.3rem;
+
+        & p {
+          font-size: 1.4rem;
+          line-height: 1.36;
+          color: #1b2733;
+        }
+      }
+
+      .table-custom-col-02 {
+        flex: .85;
+        line-height: 1.36;
+        
+
+        & select {
+          width: 95%;
+          outline: none;
+          padding: .55rem 1.3rem;
+          font-size: 1.4rem;
+          color: #1b2733;
+          line-height: 1.36;
+          color: #1b2733;
+          border-radius: 4px;
+          border: solid 1px #c1c7cd;
+
+          & option {
+            font-size: 1.2rem;
+            padding-left: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+// ==================================
+// CREATE TEAM END
 // ==================================
 
 

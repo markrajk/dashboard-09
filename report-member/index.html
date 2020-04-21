@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | User Settings | Teams</title>
+    <title>Dashboard | Report | Member</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
         integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
     <link rel="stylesheet" href="../public/css/bootstrap.css">
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
@@ -27,7 +28,7 @@
                             <img src="../public/img/logo-png.png" alt="logo">
                         </a>
                     </li>
-                    <li class="sidebar-main-item">
+                    <li class="sidebar-main-item active">
                         <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
                             <i class="icon-users"></i>
                         </a>
@@ -46,7 +47,7 @@
                             <i class="icon-business"></i>
                         </a>
                     </li>
-                    <li class="sidebar-main-item active">
+                    <li class="sidebar-main-item">
                         <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
                             <i class="icon-settings"></i>
                         </a>
@@ -105,9 +106,9 @@
             <header class="header">
                 <div class="header-top">
                     <div class="header-top-left text-truncate">
-                        <h1 class="header-top-left-title text-truncate">User settings</h1>
+                        <h1 class="header-top-left-title text-truncate">Team Marketing</h1>
                         <p class="header-top-left-small text-truncate">
-                            Here you can edit your personal profile and settings.
+                            We make great ads, campaigns and create a super brand.
                         </p>
                     </div>
                     <div class="header-top-right">
@@ -147,115 +148,214 @@
                 </div>
                 <div class="header-bottom">
                     <div class="choose">
-                        <a href="../user-settings-general/index.html">
-                            General
+                        <a href="../teams-average-charts/index.html">
+                            Charts
                         </a>
 
-                        <a href="../user-settings-teams/index.html" class="active">
-                            Teams
+                        <a href="../teams-members/index.html">
+                            Members
                         </a>
 
-                        <a href="../user-settings-advanced/index.html">
-                            Advanced tools
+                        <a href="../teams-comments/index.html">
+                            Comments
+                        </a>
+
+
+                        <a href="../teams-settings-general/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html" class="active">
+                            Reports
                         </a>
                     </div>
                 </div>
 
             </header>
 
-            <main class="user-settings-teams">
-                <div class="user-settings-teams-header">
-                    <p class="subheader-text">Teams</p>
-                    <p class="subheader-text-small">You are member of following teams.</p>
+            <main class="report-member">
+                <div class="report-member-header">
+                    <a href="../report-team/index.html" class="btn-custom-primary outline">Team report</a>
+                    <a href="../report-member/index.html" class="btn-custom-primary">Member report</a>
                 </div>
-                <div class="user-settings-teams-body">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <table class="table-header-fixed flex-table">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Team lead</th>
-                                        <th>Members</th>
-                                        <th>
-                                            <div class="dropdown-custom">
-                                                <a href="#" class="dropdown-custom-trigger">
-                                                    <i class="icon-list"></i>
-                                                    <i class="icon-caret-down"></i>
-                                                </a>
-                                                <ul class="dropdown-custom-list">
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 1</a>
-                                                    </li>
+                <div class="report-member-body">
+                    <div class="section-header-bar">
+                        <p class="section-header-bar-title">Export member reports</p>
+                    </div>
 
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 2</a>
-                                                    </li>
+                    <div class="report-member-body-options">
+                        <ul class="report-member-body-options-list">
+                            <li class="report-member-body-options-list-title">Short-term average bars</li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio1" id="option-1-1" checked>
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-1-1">Include</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio1" id="option-1-2">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-1-2">Not include</p>
+                            </li>
+                        </ul>
 
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 3</a>
-                                                    </li>
+                        <ul class="report-member-body-options-list">
+                            <li class="report-member-body-options-list-title">Long-term average charts</li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio2" id="option-2-1" checked>
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-2-1">12 weeks charts</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio2" id="option-2-2">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-2-2">12 month charts</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio2" id="option-2-3">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-2-3">Not include</p>
+                            </li>
+                        </ul>
 
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Option 4</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="table-header-fixed-col-1">
-                                            <a href="../single-user/index.html">Team Software</a>
-                                        </td>
-                                        <td class="table-header-fixed-col-2">
-                                            <p>martin.billo@gmail.com</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-3">
-                                            <p>32 members</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-4">
-                                            <div class="dropdown-custom">
-                                                <a href="#" class="dropdown-custom-trigger">
-                                                    <i class="icon-ellipsis"></i>
-                                                </a>
-                                                <ul class="dropdown-custom-list">
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Quit team</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                        <ul class="report-member-body-options-list">
+                            <li class="report-member-body-options-list-title">Received feedback</li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio3" id="option-3-1" checked>
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-3-1">Include last 25</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio3" id="option-3-2">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-3-2">Include last 50</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio3" id="option-3-3">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-3-3">Not include</p>
+                            </li>
+                        </ul>
 
-                                    <tr>
-                                        <td class="table-header-fixed-col-1">
-                                            <a href="../single-user/index.html">Team Hardware</a>
-                                        </td>
-                                        <td class="table-header-fixed-col-2">
-                                            <p>jörgen.vogel@gmail.com</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-3">
-                                            <p>12 members</p>
-                                        </td>
-                                        <td class="table-header-fixed-col-4">
-                                            <div class="dropdown-custom">
-                                                <a href="#" class="dropdown-custom-trigger">
-                                                    <i class="icon-ellipsis"></i>
-                                                </a>
-                                                <ul class="dropdown-custom-list">
-                                                    <li class="dropdown-custom-list-item">
-                                                        <a href="#" class="dropdown-custom-list-item-link">Quit team</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
+                        <ul class="report-member-body-options-list">
+                            <li class="report-member-body-options-list-title">Given feedback</li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio4" id="option-4-1" checked>
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-4-1">Include last 25</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio4" id="option-4-2">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-4-2">Include last 50</p>
+                            </li>
+                            <li class="report-member-body-options-list-item">
+                                <div class="pretty p-default p-curve">
+                                    <input type="radio" name="radio4" id="option-4-3">
+                                    <div class="state p-primary-o">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                </div>
+                                <label class="report-member-body-options-list-item-label" for="option-4-3">Not include</p>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <a href="#" class="btn-custom-primary">Export PDF Report</a>
+                </div>
 
-                                </tbody>
-                            </table>
+                <!-- LINK TEAM TO COMPANY -->
+                <div class="modal fade modal-custom" id="linkTeamModal" tabindex="-1" role="dialog"
+                    aria-labelledby="linkTeamModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">Link team to a company</h3>
+                                <h5 class="modal-custom-subtitle">Search by team leader email address.</h5>
+                                <div class="input-container">
+                                    <i class="icon-search"></i>
+                                    <input type="text" class="modal-custom-input" id="ft-search" name="ft-search"
+                                        placeholder="Search">
+                                </div>
+                                <div class="modal-custom-list">
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="modal-custom-btn-round">Send linking request</a>
+                                <p class="modal-custom-info">By clicking <a href="#">send request</a> you confirm that
+                                    your team has the <span>rights</span> to join this company.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -394,8 +494,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </main>
         </div>
     </div>
