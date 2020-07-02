@@ -1321,6 +1321,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 103rem;
     border-top: 1px solid #e1e1e1; }
   .teams-comments .section-comments {
@@ -1685,6 +1686,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 80.5rem;
     border-top: 1px solid #e1e1e1; }
   .teams-settings-feedback-header {
@@ -1831,6 +1833,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 80.5rem;
     border-top: 1px solid #e1e1e1; }
   .teams-settings-rights-header {
@@ -2190,6 +2193,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 103rem;
     border-top: 1px solid #e1e1e1; }
   .single-user-header {
@@ -2458,6 +2462,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 103rem;
     border-top: 1px solid #e1e1e1; }
   .single-user-feedback-header {
@@ -2727,6 +2732,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 80.5rem;
     border-top: 1px solid #e1e1e1; }
   .create-new-team-header {
@@ -3053,6 +3059,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10;
     max-width: 80.5rem;
     border-top: 1px solid #e1e1e1; }
   .company-teams-body {
